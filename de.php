@@ -272,9 +272,9 @@ $lang["gotoadvancedsearch"]="zur erweiterten Suche";
 $lang["viewnewmaterial"]="neue Einträge anzeigen";
 $lang["researchrequestservice"]="Suchanfrage";
 
-# Admin
+# Team Centre
 $lang["manageresources"]="Ressourcen verwalten";
-$lang["overquota"]="Speicherplatz voll; es können keine weiteren Ressourcen hinzugefügt werden";
+$lang["overquota"]="Speicherplatz erschöpft; es können keine weiteren Ressourcen hinzugefügt werden";
 $lang["managearchiveresources"]="Archivierte Ressourcen verwalten";
 $lang["managethemes"]="Themen verwalten";
 $lang["manageresearchrequests"]="Suchanfragen verwalten";
@@ -306,7 +306,7 @@ $lang["pluginssetup"]="Plugins verwalten";
 $lang["pluginmanager"]="Plugin Manager";
 $lang["users"]="Benutzer";
 
-# Admin - Bulk E-mails
+# Team Centre - Bulk E-mails
 $lang["emailrecipients"]="E-Mail Empfänger";
 $lang["emailsubject"]="E-Mail Betreff";
 $lang["emailtext"]="E-Mail Text";
@@ -316,10 +316,10 @@ $lang["emailsent"]="E-Mail wurde gesendet.";
 $lang["mustspecifyoneuser"]="Sie müssen mindestens einen Benutzer auswählen";
 $lang["couldnotmatchusers"]="Keine passende Benutzer gefunden (oder Benutzer mehrfach angegeben)";
 
-# Admin - User management
+# Team Centre - User management
 $lang["comments"]="Kommentare";
 
-# Admin - Resource management
+# Team Centre - Resource management
 $lang["viewuserpending"]="Durch Benutzer zur Freischaltung eingereichte Ressourcen anzeigen";
 $lang["userpending"]="Durch Benutzer zur Freischaltung eingereichte Ressourcen";
 $lang["viewuserpendingsubmission"]="Durch Benutzer hochgeladene Ressourcen anzeigen";
@@ -412,7 +412,7 @@ $lang['hiddencollections_show']="Zeige versteckte Kollektionen";
 $lang['hide_collection']="Kollektion verstecken";
 $lang["viewall"]="Alle anzeigen";
 $lang['view_all_resources'] = 'Anzeigen aller Ressourcen dieser Kollektion';
-$lang["action-editall"]="Alle Bearbeiten";
+$lang["action-editall"]="Alle bearbeiten";
 $lang['edit_all_resources'] = 'Bearbeiten aller Ressourcen';
 $lang["hidethumbnails"]="Vorschaubilder ausblenden";
 $lang["showthumbnails"]="Vorschaubilder einblenden";
@@ -607,7 +607,8 @@ $lang["log-a"]="Zugriff geändert";
 $lang["log-r"]="Metadaten zurückgesetzt";
 $lang["log-b"]="Alternative Datei erstellt";
 $lang["log-missinglang"]="[type] (Sprache fehlt)"; # [type] will be replaced.
-$lang['log-adminpermissionsrequired'] = 'Voller Admin-Zugang erforderlich!';$lang['log-removedcustomuseraccess'] = 'Removed custom access for user: ';
+$lang['log-adminpermissionsrequired'] = 'Voller Admin-Zugang erforderlich!';
+$lang['log-removedcustomuseraccess'] = 'Entfernen des Zugangs von: ';
 $lang['log-deleted_all'] = 'Alle Ressourcen dieser Kollektion gelöscht (verschoben zu Status %ARCHIVE)';
 
 ## Universal log codes (generic - not for example, resource specific)
@@ -767,7 +768,7 @@ $lang["name"]="Name";
 $lang["action"]="Aktion";
 $lang["treeobjecttype-field"]=$lang["field"]="Feld";
 $lang["save"]="Speichern";
-$lang["revert"]="Zurücksetzen";
+$lang["revert"]="Wiederherstellen";
 $lang['continue'] = 'Weiter';
 $lang["cancel"]="Abbrechen";
 $lang["view"]="Zeige";
@@ -989,7 +990,6 @@ $lang["collectiondeleteconfirm"]="Sind Sie sicher, dass Sie diese Kollektion lö
 $lang["hidden"]="(versteckt)";
 $lang["requestnewpassword"]="Neues Passwort anfordern";
 
-
 # New for 1.4
 $lang["reorderresources"]="Anordnen der Ressourcen innerhalb der Kollektion (Drag-and-drop)";
 $lang['resourcetypereordered']="Position der Ressourcentype neu geordnet";
@@ -1026,9 +1026,8 @@ $lang["contactsheetintrotext"]="Bitte wählen Sie die Blattgröße und die Spalt
 $lang["size"]="Größe";
 $lang["orientation"]="Ausrichtung";
 $lang["requiredfield"]="Kennzeichnet Pflichtfelder";
-$lang["requiredfields"]="Please review the form and try again. The following fields were not completed:";
-$lang["requiredfields-general"]="Bitte füllen Sie alle Pflichtfelder aus";
 $lang["requiredfields"]="Bitte überprüfen Sie das Formular. Die folgenden Felder wurden noch nicht ausgefüllt: ";
+$lang["requiredfields-general"]="Bitte füllen Sie alle Pflichtfelder aus";
 $lang["requiredantispam"]="Der Anti-Spam Code wurde nicht korrekt eingegeben, bitte versuchen Sie es erneut";
 $lang["viewduplicates"]="Doppelte Ressourcen anzeigen";
 $lang["duplicateresources"]="Doppelte Ressourcen";
@@ -1319,7 +1318,7 @@ $lang["never"]="Niemals";
  $lang["resourcerequeststatus1"]="Akzeptiert";
  $lang["resourcerequeststatus2"]="Abgelehnt";
 
-$lang["ppi"]="PPI"; # (Pixels Per Inch - used on the resource download options list).
+ $lang["ppi"]="PPI"; # (Pixels Per Inch - used on the resource download options list).
 
  $lang["useasthemethumbnail"]="Diese Ressource als Thumbnail für Thema nutzen?";
  $lang["sessionexpired"]="Sie wurden automatisch ausgeloggt, weil Sie länger als 30 Minuten inaktiv waren. Bitte geben Sie Ihre Login Daten erneut ein, um fortzufahren.";
@@ -1328,7 +1327,7 @@ $lang["ppi"]="PPI"; # (Pixels Per Inch - used on the resource download options l
  $lang["publishstatus"]="Speichern mit Veröffentlichungsstatus:";
  $lang["addnewcontent"]="Neuer Inhalt (Seite,Name)";
  $lang["hitcount"]="Zugriffszähler";
-$lang["downloads"]="Downloads";
+ $lang["downloads"]="Downloads";
 
  $lang["addremove"]="Hinzufügen/Entfernen";
 
@@ -1341,44 +1340,44 @@ $lang["downloads"]="Downloads";
  $lang["allowedextensions"]="Erlaubte Erweiterungen";
  $lang["allowedextensions-extensions"]="Erlaubte Erweiterungen: %EXTENSIONS"; # Use %EXTENSIONS, %extensions or %Extensions as a placeholder. The placeholder will be replaced with the filename extensions, using the same case. E.g. "Allowed Extensions: %EXTENSIONS" -> "Allowed Extensions: JPG, PNG"
 
-$lang["alternativebatchupload"]="Alternative Dateien hochladen";
+ $lang["alternativebatchupload"]="Alternative Dateien hochladen";
 $lang["alternativelocalupload"]="Alternative Dateien hochladen - aus lokalem Uploadordner holen";
 
-$lang["confirmdeletefieldoption"]="Wollen Sie wirklich diese Option LÖSCHEN?";
+ $lang["confirmdeletefieldoption"]="Wollen Sie wirklich diese Option LÖSCHEN?";
 
-$lang["cannotshareemptycollection"]="Diese Kollektion ist leer und kann daher nicht weitergegeben werden.";
+ $lang["cannotshareemptycollection"]="Diese Kollektion ist leer und kann daher nicht weitergegeben werden.";
 $lang["cannotshareemptythemecategory"]="Diese Themenkategorie enthält keine Themen und kann daher nicht weitergegeben werden.";
 
-$lang["requestall"]="Alle anfordern";
-$lang["requesttype-email_only"]=$lang["resourcerequesttype0"]="Nur E-Mail";
-$lang["requesttype-managed"]=$lang["resourcerequesttype1"]="Verwaltete Anfrage";
-$lang["requesttype-payment_-_immediate"]=$lang["resourcerequesttype2"]="Zahlung – sofort";
-$lang["requesttype-payment_-_invoice"]=$lang["resourcerequesttype3"]="Zahlung – auf Rechnung";
+ $lang["requestall"]="Alle anfordern";
+ $lang["requesttype-email_only"]=$lang["resourcerequesttype0"]="Nur E-Mail";
+ $lang["requesttype-managed"]=$lang["resourcerequesttype1"]="Verwaltete Anfrage";
+ $lang["requesttype-payment_-_immediate"]=$lang["resourcerequesttype2"]="Zahlung – sofort";
+ $lang["requesttype-payment_-_invoice"]=$lang["resourcerequesttype3"]="Zahlung – auf Rechnung";
 
 $lang["requestsent"]="Ihre Ressourcenanfrage wurde zur Freigabe eingereicht ";
 $lang["requestsenttext"]="Ihre Ressourcenanfrage wurde zur Freigabe eingereicht und wird in Kürze bearbeitet.";
 $lang["requestupdated"]="Ihre Ressourcenanfrage wurde aktualisiert ";
 $lang["requestassignedtouser"]="Ihre Ressourcenanfrage wurde % zur Überprüfung zugeordnet.";
-$lang["requestapprovedmail"]="Ihre Anfrage wurde akzeptiert. Bitte Klicken Sie den untenstehenden Link, um die angefragten Ressourcen anzuzeigen und herunterzuladen.";
-$lang["requestdeclinedmail"]="Es tut uns leid, Ihre Anfrage für die Ressourcen in der Kollektion wurde abgelehnt.";
+ $lang["requestapprovedmail"]="Ihre Anfrage wurde akzeptiert. Bitte Klicken Sie den untenstehenden Link, um die angefragten Ressourcen anzuzeigen und herunterzuladen.";
+ $lang["requestdeclinedmail"]="Es tut uns leid, Ihre Anfrage für die Ressourcen in der Kollektion wurde abgelehnt.";
 
-$lang["resourceexpirymail"]="Die folgenden Ressourcen sind abgelaufen:";
-$lang["resourceexpiry"]="Ablauf";
+ $lang["resourceexpirymail"]="Die folgenden Ressourcen sind abgelaufen:";
+ $lang["resourceexpiry"]="Ablauf";
 
-$lang["requestapprovedexpires"]="Ihr Zugriff auf diese Ressourcen wir ablaufen am";
+ $lang["requestapprovedexpires"]="Ihr Zugriff auf diese Ressourcen wir ablaufen am";
 
-$lang["pleasewaitsmall"]="(bitte warten)";
-$lang["removethisfilter"]="(diesen Filter entfernen)";
+ $lang["pleasewaitsmall"]="(bitte warten)";
+ $lang["removethisfilter"]="(diesen Filter entfernen)";
 
-$lang["no_exif"]="EXIF/IPTC/XMP Metadaten für diesen Upload nicht importieren";
-$lang["difference"]="Unterschied";
-$lang["viewdeletedresources"]="Gelöschte Ressourcen anzeigen";
-$lang["finaldeletion"]="Diese Ressource ist bereits im Status 'gelöscht'. Diese Aktion wird die Ressource vollständig vom System entfernen.";
-$lang["diskerror"]="Kein Speicherplatz verfügbar";
+ $lang["no_exif"]="EXIF/IPTC/XMP Metadaten für diesen Upload nicht importieren";
+ $lang["difference"]="Unterschied";
+ $lang["viewdeletedresources"]="Gelöschte Ressourcen anzeigen";
+ $lang["finaldeletion"]="Diese Ressource ist bereits im Status 'gelöscht'. Diese Aktion wird die Ressource vollständig vom System entfernen.";
+ $lang["diskerror"]="Kein Speicherplatz verfügbar";
 
-$lang["nocookies"]="Ein Cookie konnte nicht richtig gesetzt werden. Bitte stellen Sie sicher, dass Cookies in Ihrem Browser aktiviert sind.";
+ $lang["nocookies"]="Ein Cookie konnte nicht richtig gesetzt werden. Bitte stellen Sie sicher, dass Cookies in Ihrem Browser aktiviert sind.";
 
-$lang["selectedresourceslightroom"]="Ausgewählte Ressourcen (Lightroom kompatible Liste):";
+ $lang["selectedresourceslightroom"]="Ausgewählte Ressourcen (Lightroom kompatible Liste):";
 
 # Plugins Manager
 $lang['plugins-noneinstalled'] = "Derzeit keine Plugins aktiviert.";
@@ -1423,7 +1422,6 @@ $lang['location-add'] = 'Geodaten hinzufügen';
 $lang['location-edit'] = 'Geodaten bearbeiten';
 $lang['location-details'] = 'Karte doppelklicken, um einen Pin zu platzieren. Anschließend können Sie dann Pin an die gewünschte Stelle ziehen.';
 $lang['location-missing'] = 'Die folgenden Ressourcen haben keine Geodaten und werden nicht angezeigt:';
-$lang['location-noneselected']="Kein Ort ausgewählt";
 $lang['location-noneselected']="Kein Ort ausgewählt";
 $lang['location'] = 'Ort';
 $lang['mapzoom'] = 'Karten Zoom';
@@ -1476,89 +1474,89 @@ $lang["embeddedvalue"]="Eingebetteter Wert";
 $lang["exiftooltag"]="Exiftool Tag";
 $lang["error"]="Fehler";
 $lang["exiftoolnotfound"]="Exiftool konnte nicht gefunden werden.";
-$lang["existing_tags"]="Existierende Exiftool Tags";
-$lang["new_tags"]="Neue Exiftool Tags (werden beim Herunterladen hinzugefügt)";
-$lang["date_of_download"]="[Datum des Downloads]";
-$lang["field_ref_and_name"]="%ref% - %name%"; # %ref% and %name% will be replaced, e.g. 3 – Country
+ $lang["existing_tags"]="Existierende Exiftool Tags";
+ $lang["new_tags"]="Neue Exiftool Tags (werden beim Herunterladen hinzugefügt)";
+ $lang["date_of_download"]="[Datum des Downloads]";
+ $lang["field_ref_and_name"]="%ref% - %name%"; # %ref% and %name% will be replaced, e.g. 3 – Country
 $lang['metadata-report-fits_section'] = 'FITS tags mapped';
 
-$lang["indicateusage"]="Bitte beschreiben Sie die geplante Nutzung dieser Ressource.";
-$lang["usage"]="Nutzung";
-$lang["usagecomments"]="Nutzung";
-$lang["indicateusagemedium"]="Nutzung auf Medium";
-$lang["usageincorrect"]="Sie müssen die geplante Nutzung und das Medium angeben";
+ $lang["indicateusage"]="Bitte beschreiben Sie die geplante Nutzung dieser Ressource.";
+ $lang["usage"]="Nutzung";
+ $lang["usagecomments"]="Nutzung";
+ $lang["indicateusagemedium"]="Nutzung auf Medium";
+ $lang["usageincorrect"]="Sie müssen die geplante Nutzung und das Medium angeben";
 
-$lang["savesearchassmartcollection"]="Als Smarte Kollektion speichern";
-$lang["smartcollection"]="Smarte Kollektion";
-$lang["dosavedsearch"]="Gespeicherte Suche ausführen";
+ $lang["savesearchassmartcollection"]="Als Smarte Kollektion speichern";
+ $lang["smartcollection"]="Smarte Kollektion";
+ $lang["dosavedsearch"]="Gespeicherte Suche ausführen";
 
 
-$lang["uploadertryjava"]="Wenn Sie Probleme mit dem Upload haben, versuchen Sie bitte den <strong>Java Uploader</strong>.";
-$lang["uploadertryplupload"]="<strong>NEW</strong> - Versuchen Sie den neuen Uploader.";
-$lang["getjava"]="Um sicherzustellen, dass Sie die neueste Java Version installiert haben, besuchen Sie bitte die Java Website.";
+ $lang["uploadertryjava"]="Wenn Sie Probleme mit dem Upload haben, versuchen Sie bitte den <strong>Java Uploader</strong>.";
+ $lang["uploadertryplupload"]="<strong>NEW</strong> - Versuchen Sie den neuen Uploader.";
+ $lang["getjava"]="Um sicherzustellen, dass Sie die neueste Java Version installiert haben, besuchen Sie bitte die Java Website.";
 
-$lang["all"]="Alle";
-$lang["allresourcessearchbar"]="Alle Ressourcen";
-$lang["allcollectionssearchbar"]="Alle Kollektionen";
-$lang["backtoresults"]="Zurück zu den Suchergebnissen";
-$lang["continuetoresults"]="Weiter zu den Suchergebnissen";
+ $lang["all"]="Alle";
+ $lang["allresourcessearchbar"]="Alle Ressourcen";
+ $lang["allcollectionssearchbar"]="Alle Kollektionen";
+ $lang["backtoresults"]="Zurück zu den Suchergebnissen";
+ $lang["continuetoresults"]="Weiter zu den Suchergebnissen";
 
-$lang["preview_all"]="Alle in Vorschau zeigen";
+ $lang["preview_all"]="Alle in Vorschau zeigen";
 
-$lang["usagehistory"]="Nutzungsprotokoll";
-$lang["usagebreakdown"]="Nutzungsanalyse";
-$lang["usagetotal"]="Downloads gesamt";
-$lang["usagetotalno"]="Gesamtzahl der Downloads";
-$lang["ok"]="OK";
+ $lang["usagehistory"]="Nutzungsprotokoll";
+ $lang["usagebreakdown"]="Nutzungsanalyse";
+ $lang["usagetotal"]="Downloads gesamt";
+ $lang["usagetotalno"]="Gesamtzahl der Downloads";
+ $lang["ok"]="OK";
 
-$lang["random"]="Zufällig";
-$lang["userratingstatsforresource"]="Bewertungsstatistik für diese Ressource";
-$lang["average"]="Durchschnitt";
-$lang["popupblocked"]="Das Popup-Fenster wurde von Ihrem Browser geblockt.";
-$lang["closethiswindow"]="Fenster schließen";
+ $lang["random"]="Zufällig";
+ $lang["userratingstatsforresource"]="Bewertungsstatistik für diese Ressource";
+ $lang["average"]="Durchschnitt";
+ $lang["popupblocked"]="Das Popup-Fenster wurde von Ihrem Browser geblockt.";
+ $lang["closethiswindow"]="Fenster schließen";
 
-$lang["requestaddedtocollection"]="Diese Ressource wurde zu Ihrer aktuellen Kollektion hinzugefügt. Sie können die Ressourcen in Ihrer Kollektion mit dem Link \'Alle anfordern\' anfordern.";
+ $lang["requestaddedtocollection"]="Diese Ressource wurde zu Ihrer aktuellen Kollektion hinzugefügt. Sie können die Ressourcen in Ihrer Kollektion mit dem Link \'Alle anfordern\' anfordern.";
 
 # E-commerce text
-$lang["buynow"]="Jetzt kaufen";
-$lang["yourbasket"]="Ihr Warenkorb";
-$lang["addtobasket"]="Zum Warenkorb hinzufügen";
-$lang["yourbasketisempty"]="Ihr Warenkorb ist leer.";
-$lang["yourbasketcontains-1"]="Ihre Warenkorb enthält 1 Objekt.";
-$lang["yourbasketcontains-2"]="Ihre Warenkorb enthält %qty Objekte."; # %qty will be replaced, e.g. Your basket contains 3 items.
-$lang["buy"]="Kaufen";
-$lang["buyitemaddedtocollection"]="Diese Ressource wurde zu Ihrem Warenkorb hinzugefügt. Sie können alle Ressourcen im Warenkorb mit dem Link \'Jetzt kaufen\' erwerben.";
-$lang["buynowintro"]="Bitte wählen Sie die Größen aus, die Sie benötigen.";
-$lang["nodownloadsavailable"]="Für diese Ressource gibt es leider keine Downloads.";
-$lang["proceedtocheckout"]="Weiter zur Kasse";
-$lang["totalprice"]="Gesamtpreis";
-$lang["price"]="Preis";
-$lang["waitingforpaymentauthorisation"]="Wir haben leider noch keine Zahlungsbestätigung erhalten. Bitte warten Sie einen Augenblick und klicken Sie dann 'Aktualisieren'.";
-$lang["reload"]="Aktualisieren";
-$lang["downloadpurchaseitems"]="Gekaufte Ressourcen herunterladen";
-$lang["downloadpurchaseitemsnow"]="Bitte benutzen Sie die untenstehenden Links, um Ihre gekauften Ressourcen jetzt herunterzuladen.<br><br>Verlassen Sie diese Seite nicht, bis Sie alle Ressourcen heruntergeladen haben.";
-$lang["alternatetype"]="Alternative Art";
-$lang["viewpurchases"]="Meine Einkäufe";
-$lang["viewpurchasesintro"]="Bitte nutzen Sie die untenstehenden Links, um auf Ihre gekaufte Ressourcen zuzugreifen.";
-$lang["orderdate"]="Kaufdatum";
-$lang["removefrombasket"]="Aus dem Warenkorb entfernen";
-$lang["total-orders-0"] = "<strong>Gesamt: 0</strong> Bestellungen";
-$lang["total-orders-1"] = "<strong>Gesamt: 1</strong> Bestellung";
-$lang["total-orders-2"] = "<strong>Gesamt: %number</strong> Bestellungen"; # %number will be replaced, e.g. Total: 5 Orders
-$lang["purchase_complete_email_admin"] = "Kaufbenachrichtigung";
-$lang["purchase_complete_email_admin_body"] = "Die folgende Bestellung wurde erfolgreich ausgeführt.";
-$lang["purchase_complete_email_user"] = "Kaufbestätigung";
-$lang["purchase_complete_email_user_body"] = "Vielen Dank für Ihren Einkauf. Bitte nutzen Sie den untenstehenden Link, um auf Ihre gekauften Objekte zuzugreifen.";
+ $lang["buynow"]="Jetzt kaufen";
+ $lang["yourbasket"]="Ihr Warenkorb";
+ $lang["addtobasket"]="Zum Warenkorb hinzufügen";
+ $lang["yourbasketisempty"]="Ihr Warenkorb ist leer.";
+ $lang["yourbasketcontains-1"]="Ihre Warenkorb enthält 1 Objekt.";
+ $lang["yourbasketcontains-2"]="Ihre Warenkorb enthält %qty Objekte."; # %qty will be replaced, e.g. Your basket contains 3 items.
+ $lang["buy"]="Kaufen";
+ $lang["buyitemaddedtocollection"]="Diese Ressource wurde zu Ihrem Warenkorb hinzugefügt. Sie können alle Ressourcen im Warenkorb mit dem Link \'Jetzt kaufen\' erwerben.";
+ $lang["buynowintro"]="Bitte wählen Sie die Größen aus, die Sie benötigen.";
+ $lang["nodownloadsavailable"]="Für diese Ressource gibt es leider keine Downloads.";
+ $lang["proceedtocheckout"]="Weiter zur Kasse";
+ $lang["totalprice"]="Gesamtpreis";
+ $lang["price"]="Preis";
+ $lang["waitingforpaymentauthorisation"]="Wir haben leider noch keine Zahlungsbestätigung erhalten. Bitte warten Sie einen Augenblick und klicken Sie dann 'Aktualisieren'.";
+ $lang["reload"]="Aktualisieren";
+ $lang["downloadpurchaseitems"]="Gekaufte Ressourcen herunterladen";
+ $lang["downloadpurchaseitemsnow"]="Bitte benutzen Sie die untenstehenden Links, um Ihre gekauften Ressourcen jetzt herunterzuladen.<br><br>Verlassen Sie diese Seite nicht, bis Sie alle Ressourcen heruntergeladen haben.";
+ $lang["alternatetype"]="Alternative Art";
+ $lang["viewpurchases"]="Meine Einkäufe";
+ $lang["viewpurchasesintro"]="Bitte nutzen Sie die untenstehenden Links, um auf Ihre gekaufte Ressourcen zuzugreifen.";
+ $lang["orderdate"]="Kaufdatum";
+ $lang["removefrombasket"]="Aus dem Warenkorb entfernen";
+ $lang["total-orders-0"] = "<strong>Gesamt: 0</strong> Bestellungen";
+ $lang["total-orders-1"] = "<strong>Gesamt: 1</strong> Bestellung";
+ $lang["total-orders-2"] = "<strong>Gesamt: %number</strong> Bestellungen"; # %number will be replaced, e.g. Total: 5 Orders
+ $lang["purchase_complete_email_admin"] = "Kaufbenachrichtigung";
+ $lang["purchase_complete_email_admin_body"] = "Die folgende Bestellung wurde erfolgreich ausgeführt.";
+ $lang["purchase_complete_email_user"] = "Kaufbestätigung";
+ $lang["purchase_complete_email_user_body"] = "Vielen Dank für Ihren Einkauf. Bitte nutzen Sie den untenstehenden Link, um auf Ihre gekauften Objekte zuzugreifen.";
 $lang["purchase_email_address"] = "Tragen Sie bitte eine gültige E-Mail-Adresse ein um eine Bestätigung zu Ihrer Bestellung zu bekommen";
 
 
-$lang["subcategories"]="Unterkategorien";
-$lang["subcategory"]="Unterkategorie";
-$lang["back"]="Zurück";
+ $lang["subcategories"]="Unterkategorien";
+ $lang["subcategory"]="Unterkategorie";
+ $lang["back"]="Zurück";
 
-$lang["pleasewait"]="Bitte warten...";
+ $lang["pleasewait"]="Bitte warten...";
 
-$lang["autorotate"]="Bilder automatisch drehen?";
+ $lang["autorotate"]="Bilder automatisch drehen?";
 
 # Reports
 # Report names (for the default reports)
@@ -1586,7 +1584,6 @@ $lang['report_periodic_email_option_selected_user_groups'] = 'gewählte Benutzer
 $lang['report_periodic_email_unsubscribe_title'] = 'Abmelden von den periodischen E-Mails';
 $lang['report_periodic_email_unsubscribe_confirmation'] = 'Bitte die Abmeldung bestätigen';
 
-
 #Column headers (for the default reports)
 $lang["columnheader-keyword"]="Stichwort";
 $lang["columnheader-entered_count"]="Anzahl";
@@ -1605,97 +1602,97 @@ $lang["columnheader-creation_date"]="Erstellungsdatum";
 $lang["columnheader-sent"]="Versendet";
 $lang["columnheader-last_seen"]="Zuletzt gesehen";
 
-$lang["period"]="Zeitraum";
-$lang["lastndays"]="Letzte ? Tage"; # ? is replaced by the system with the number of days, for example "Last 100 days".
-$lang["specificdays"]="Spezifische Anzahl von Tagen";
-$lang["specificdaterange"]="Spezifischer Zeitraum";
-$lang["to"]="bis";
+ $lang["period"]="Zeitraum";
+ $lang["lastndays"]="Letzte ? Tage"; # ? is replaced by the system with the number of days, for example "Last 100 days".
+ $lang["specificdays"]="Spezifische Anzahl von Tagen";
+ $lang["specificdaterange"]="Spezifischer Zeitraum";
+ $lang["to"]="bis";
 
-$lang["emailperiodically"]="Neue regelmäßige E-Mail erstellen";
-$lang["emaileveryndays"]="Diesen Bericht regelmäßig alle ? per E-Mail versenden";
-$lang["newemailreportcreated"]="Eine neue regelmäßige E-Mail wurde erstellt. Sie können die E-Mail stoppen, indem Sie den Link am Ende der E-Mail anklicken.";
-$lang["unsubscribereport"]="Um sich von diesem Bericht abzumelden, klicken Sie bitte diesen Link an:";
-$lang["unsubscribed"]="Abgemeldet";
-$lang["youhaveunsubscribedreport"]="Sie wurden von dieser regelmäßigen E-Mail abgemeldet.";
-$lang["sendingreportto"]="Sende Bericht an";
-$lang["reportempty"]="Keine passenden Daten für den ausgewählen Bericht und Zeitraum gefunden.";
+ $lang["emailperiodically"]="Neue regelmäßige E-Mail erstellen";
+ $lang["emaileveryndays"]="Diesen Bericht regelmäßig alle ? per E-Mail versenden";
+ $lang["newemailreportcreated"]="Eine neue regelmäßige E-Mail wurde erstellt. Sie können die E-Mail stoppen, indem Sie den Link am Ende der E-Mail anklicken.";
+ $lang["unsubscribereport"]="Um sich von diesem Bericht abzumelden, klicken Sie bitte diesen Link an:";
+ $lang["unsubscribed"]="Abgemeldet";
+ $lang["youhaveunsubscribedreport"]="Sie wurden von dieser regelmäßigen E-Mail abgemeldet.";
+ $lang["sendingreportto"]="Sende Bericht an";
+ $lang["reportempty"]="Keine passenden Daten für den ausgewählen Bericht und Zeitraum gefunden.";
 
-$lang["purchaseonaccount"]="Zum Konto hinzufügen";
-$lang["areyousurepayaccount"]="Sind Sie sicher, dass Sie diesen Einkauf zu Ihrem Konto hinzufügen wollen?";
-$lang["accountholderpayment"]="Zahlung Kontoinhaber";
-$lang["subtotal"]="Zwischensumme";
-$lang["discountsapplied"]="Angewendete Rabatte";
-$lang["log-p"]="Gekaufte Ressource";
-$lang["viauser"]="durch Benutzer";
-$lang["close"]="Schließen";
+ $lang["purchaseonaccount"]="Zum Konto hinzufügen";
+ $lang["areyousurepayaccount"]="Sind Sie sicher, dass Sie diesen Einkauf zu Ihrem Konto hinzufügen wollen?";
+ $lang["accountholderpayment"]="Zahlung Kontoinhaber";
+ $lang["subtotal"]="Zwischensumme";
+ $lang["discountsapplied"]="Angewendete Rabatte";
+ $lang["log-p"]="Gekaufte Ressource";
+ $lang["viauser"]="durch Benutzer";
+ $lang["close"]="Schließen";
 
 # Installation Check
-$lang["repeatinstallationcheck"]="Installation erneut überprüfen";
-$lang["shouldbeversion"]="sollte Version ? oder höher sein"; # E.g. "should be 4.4 or greater"
-$lang["phpinivalue"]="PHP.INI Wert für '?'"; # E.g. "PHP.INI value for 'memory_limit'"
-$lang["writeaccesstofilestore"]="Schreibzugriff auf $storagedir";
-$lang["nowriteaccesstofilestore"]="$storagedir nicht beschreibbar";
+ $lang["repeatinstallationcheck"]="Installation erneut überprüfen";
+ $lang["shouldbeversion"]="sollte Version ? oder höher sein"; # E.g. "should be 4.4 or greater"
+ $lang["phpinivalue"]="PHP.INI Wert für '?'"; # E.g. "PHP.INI value for 'memory_limit'"
+ $lang["writeaccesstofilestore"]="Schreibzugriff auf $storagedir";
+ $lang["nowriteaccesstofilestore"]="$storagedir nicht beschreibbar";
 $lang["writeaccesstoplugins"]="Schreibzugriff auf /plugins Verzeichnis";
 $lang["nowriteaccesstoplugins"]="/plugins Verzeichnis nicht beschreibbar";
-$lang["writeaccesstohomeanim"]="Schreibzugriff auf $homeanim_folder";
-$lang["nowriteaccesstohomeanim"]="$homeanim_folder nicht beschreibbar. Ändern Sie die Berechtigungen, um die Beschnitt-Funktion des transform Plugins für die Startseiten-Animation zu ermöglichen.";
-$lang["blockedbrowsingoffilestore"]="Browsen des 'filestore' Verzeichnisses nicht erlaubt";
-$lang["noblockedbrowsingoffilestore"]="filestore scheint durchsuchbar zu sein; entfernen Sie 'Indexes' aus den Apache 'Options'.";
-$lang["execution_failed"]="Unerwartete Ausgabe des %command Befehls. Ausgabe war '%output'.";  # %command and %output will be replaced, e.g. Execution failed; unexpected output when executing convert command. Output was '[stdout]'.
-$lang["exif_extension"]="EXIF Erweiterung";
-$lang["archiver_utility"]="Kompressions Befehl";
-$lang["zipcommand_deprecated"]="Bitte nutzen Sie \$collection_download und \$collection_download_settings an Stelle von \$zipcommand.";
-$lang["zipcommand_overridden"]="Aber bitte beachten Sie, dass \$zipcommand definiert ist und übergangen wird.";
-$lang["lastscheduledtaskexection"]="Letzte geplante Ausführung der Aufgaben (Tage)";
-$lang["executecronphp"]="Relevanzberechnung wird nicht effektiv sein und regelmäßige E-Mail Berichte nicht versandt werden. Stellen Sie sicher, dass <a href='../batch/cron.php'>batch/cron.php</a> mindestens einmal täglich per cron job oder ähnlich gestartet wird.";
-$lang["shouldbeormore"]="sollte ? oder höher sein"; # E.g. should be 200M or greater
-$lang["config_file"]="(config: %file)"; # %file will be replaced, e.g. (config: /etc/php5/apache2/php.ini)
-$lang['large_file_support_64_bit'] = 'Untertützung für große Dateien (64bit Plattform)';
-$lang['large_file_warning_32_bit'] = 'WARNUNG: 32bit PHP wird genutzt. Dateien größer als 2GB werden nicht unterstützt.';
+ $lang["writeaccesstohomeanim"]="Schreibzugriff auf $homeanim_folder";
+ $lang["nowriteaccesstohomeanim"]="$homeanim_folder nicht beschreibbar. Ändern Sie die Berechtigungen, um die Beschnitt-Funktion des transform Plugins für die Startseiten-Animation zu ermöglichen.";
+ $lang["blockedbrowsingoffilestore"]="Browsen des 'filestore' Verzeichnisses nicht erlaubt";
+ $lang["noblockedbrowsingoffilestore"]="filestore scheint durchsuchbar zu sein; entfernen Sie 'Indexes' aus den Apache 'Options'.";
+ $lang["execution_failed"]="Unerwartete Ausgabe des %command Befehls. Ausgabe war '%output'.";  # %command and %output will be replaced, e.g. Execution failed; unexpected output when executing convert command. Output was '[stdout]'.
+ $lang["exif_extension"]="EXIF Erweiterung";
+ $lang["archiver_utility"]="Kompressions Befehl";
+ $lang["zipcommand_deprecated"]="Bitte nutzen Sie \$collection_download und \$collection_download_settings an Stelle von \$zipcommand.";
+ $lang["zipcommand_overridden"]="Aber bitte beachten Sie, dass \$zipcommand definiert ist und übergangen wird.";
+ $lang["lastscheduledtaskexection"]="Letzte geplante Ausführung der Aufgaben (Tage)";
+ $lang["executecronphp"]="Relevanzberechnung wird nicht effektiv sein und regelmäßige E-Mail Berichte nicht versandt werden. Stellen Sie sicher, dass <a href='../batch/cron.php'>batch/cron.php</a> mindestens einmal täglich per cron job oder ähnlich gestartet wird.";
+ $lang["shouldbeormore"]="sollte ? oder höher sein"; # E.g. should be 200M or greater
+ $lang["config_file"]="(config: %file)"; # %file will be replaced, e.g. (config: /etc/php5/apache2/php.ini)
+ $lang['large_file_support_64_bit'] = 'Untertützung für große Dateien (64bit Plattform)';
+ $lang['large_file_warning_32_bit'] = 'WARNUNG: 32bit PHP wird genutzt. Dateien größer als 2GB werden nicht unterstützt.';
 
-$lang["starsminsearch"]="Sterne (Minimum)";
-$lang["anynumberofstars"]="Beliebige Anzahl Sterne";
-$lang["star"]="Stern";
-$lang["stars"]="Sterne";
+ $lang["starsminsearch"]="Sterne (Minimum)";
+ $lang["anynumberofstars"]="Beliebige Anzahl Sterne";
+ $lang["star"]="Stern";
+ $lang["stars"]="Sterne";
 
-$lang["noupload"]="Kein Upload";
+ $lang["noupload"]="Kein Upload";
 
 # System Setup
 # System Setup Tree Nodes (for the default setup tree)
-$lang["treenode-root"]="Root";
-$lang["treenode-group_management"]="Gruppenverwaltung";
-$lang["treenode-new_group"]="Neue Gruppe";
-$lang["treenode-new_subgroup"]="Neue Untergruppe";
-$lang["treenode-resource_types_and_fields"]="Ressourcen Typen / Felder";
-$lang["treenode-new_resource_type"]="Neuen Ressourcen Typ";
-$lang["treenode-new_field"]="Neues Feld";
-$lang["treenode-reports"]="Berichte";
-$lang["treenode-new_report"]="Neuer Bericht";
-$lang["treenode-downloads_and_preview_sizes"]="Download- / Vorschaugrößen";
-$lang["treenode-new_download_and_preview_size"]="Neue Download- / Vorschaugröße";
-$lang["treenode-database_statistics"]="Datenbank Statistiken";
-$lang["treenode-permissions_search"]="Suche nach Berechtigungen";
-$lang["treenode-no_name"]="(ohne Namen)";
+ $lang["treenode-root"]="Root";
+ $lang["treenode-group_management"]="Gruppenverwaltung";
+ $lang["treenode-new_group"]="Neue Gruppe";
+ $lang["treenode-new_subgroup"]="Neue Untergruppe";
+ $lang["treenode-resource_types_and_fields"]="Ressourcen Typen / Felder";
+ $lang["treenode-new_resource_type"]="Neuen Ressourcen Typ";
+ $lang["treenode-new_field"]="Neues Feld";
+ $lang["treenode-reports"]="Berichte";
+ $lang["treenode-new_report"]="Neuer Bericht";
+ $lang["treenode-downloads_and_preview_sizes"]="Download- / Vorschaugrößen";
+ $lang["treenode-new_download_and_preview_size"]="Neue Download- / Vorschaugröße";
+ $lang["treenode-database_statistics"]="Datenbank Statistiken";
+ $lang["treenode-permissions_search"]="Suche nach Berechtigungen";
+ $lang["treenode-no_name"]="(ohne Namen)";
 
-$lang["treeobjecttype-preview_size"]="Vorschaugröße";
+ $lang["treeobjecttype-preview_size"]="Vorschaugröße";
 
-$lang["permissions"]="Berechtigungen";
+ $lang["permissions"]="Berechtigungen";
 
 # System Setup File Editor
-$lang["configdefault-title"]="(Optionen von hier kopieren und einfügen)";
-$lang["config-title"]="(BITTE BEACHTEN: Sollte diese Datei nicht mehr ausführbar sein (z.B. durch Syntaxfehler), muss der Fehler direkt auf dem Server behoben werden!)";
+ $lang["configdefault-title"]="(Optionen von hier kopieren und einfügen)";
+ $lang["config-title"]="(BITTE BEACHTEN: Sollte diese Datei nicht mehr ausführbar sein (z.B. durch Syntaxfehler), muss der Fehler direkt auf dem Server behoben werden!)";
 
 # System Setup Properties Pane
-$lang["file_too_large"]="Datei zu groß";
-$lang["field_updated"]="Feld aktualisiert";
-$lang["zoom"]="Zoom";
-$lang["deletion_instruction"]="Leer lassen und speichern, um die Datei zu löschen";
-$lang["upload_file"]="Datei hochladen";
-$lang["item_deleted"]="Eintrag gelöscht";
-$lang["viewing_version_created_by"]="Ansichtsversion erstellt durch";
-$lang["on_date"]="am";
-$lang["launchpermissionsmanager"]="Berechtigungs-Manager öffnen";
-$lang["confirm-deletion"]="Sind Sie sicher?";
+ $lang["file_too_large"]="Datei zu groß";
+ $lang["field_updated"]="Feld aktualisiert";
+ $lang["zoom"]="Zoom";
+ $lang["deletion_instruction"]="Leer lassen und speichern, um die Datei zu löschen";
+ $lang["upload_file"]="Datei hochladen";
+ $lang["item_deleted"]="Eintrag gelöscht";
+ $lang["viewing_version_created_by"]="Ansichtsversion erstellt durch";
+ $lang["on_date"]="am";
+ $lang["launchpermissionsmanager"]="Berechtigungs-Manager öffnen";
+ $lang["confirm-deletion"]="Sind Sie sicher?";
 $lang["accept_png_gif_only"]="Nur .png oder .gif Erweiterung akzeptiert";
 $lang["ensure_file_extension_match"]="Sicherstellen, dass Datei und Erweiterung übereinstimmen";
 
@@ -1812,7 +1809,6 @@ $lang["error-permissiondenied"]="Zugriff verweigert!";
 $lang["error-permissions-login"]="Bitte loggen Sie sich ein, um diese Seite anzusehen";
 $lang["error-oldphp"] = "Benötigt PHP Version %version oder höher."; # %version will be replaced with, e.g., "5.2"
 $lang["error-collectionnotfound"]="Kollektion nicht gefunden.";
-
 
 $lang["no-options-available"]="Keine Optionen vorhanden";
 $lang["header-upload-subtitle"] = "Schritt %number: %subtitle"; # %number, %subtitle will be replaced, e.g. Step 1: Specify Default Content For New Resources
@@ -2247,19 +2243,19 @@ $lang["team_batch__introtext"]="";
 $lang["team_batch_select__introtext"]="";
 $lang["team_batch_upload__introtext"]="";
 $lang["team_content__introtext"]="";
-$lang["team_copy__introtext"]="Enter the ID of the resource you would like to copy. Only the resource data will be copied - any uploaded file will not be copied.";
-$lang["team_home__introtext"]="Welcome to the admin area. Use the links below to administer resources, respond to resource requests, manage featured collections and alter system settings.";
-$lang["team_report__introtext"]="Please choose a report and a date range. The report can be opened in Microsoft Excel or similar spreadsheet application.";
-$lang["team_research__introtext"]="Organise and manage 'Research Requests'. <br /><br />Choose 'edit research' to review the request details and assign the research to a team member. It is possible to base a research request on a previous collection by entering the collection ID in the 'edit' screen. <br /><br />Once the research request is assigned, choose 'edit collection' to add the research request to 'My collection' panel. Using the standard tools, it is then possible to add resources to the research. <br /><br />Once the research is complete, choose 'edit research',  change the status to complete and an email is automatically  sent to the user who requested the research. The email contains a link to the research and it is also automatically added to their 'My Collection' panel.";
-$lang["team_resource__introtext"]="Add individual resources or batch upload resources. To edit individual resources, simply search for the resource, and click edit in the 'Resource Tool' panel on the resource screen.";
-$lang["team_stats__introtext"]="Charts are generated on demand based on live data. Tick the box to print all charts for your selected year.";
-$lang["team_user__introtext"]="Use this section to add, remove and modify users.";
-$lang["terms__introtext"]="Before you proceed you must accept the terms and conditions.\n\n";
-$lang["terms__terms"]="Your terms and conditions go here.";
-$lang["terms and conditions__terms and conditions"]="Your terms and conditions go here.";
-$lang["themes__findpublic"]="Public collections are collections of resources that have been shared by other users.";
-$lang["themes__introtext"]="Featured collections are groups of resources that have been selected by the administrators to provide an example of the resources available in the system.";
-$lang["themes__manage"]="Organise and edit the featured collections available online. Featured collections are specially promoted collections. <br /><br /> <strong>1 To create a new entry under a Featured collection -  build a collection</strong><br /> Choose <strong>My Collections</strong> from the main top menu and set up a brand new <strong>public</strong> collection. Remember to include a featured collection name during the setup. Use an existing featured collection name to group the collection under a current featured collection (make sure you type it exactly the same), or choose a new title to create a brand new featured collection. Never allow users to add/remove resources from featured collections. <br /> <br /><strong>2 To edit the content of an existing entry under a featured collection </strong><br /> Choose <strong>edit collection</strong>. The items in that collection will appear in the <strong>My Collections</strong> panel at the bottom of the screen. Use the standard tools to edit, remove or add resources. <br /> <br /><strong>3 To alter a featured collection name or move a collection to appear under a different featured collection</strong><br /> Choose <strong>edit properties</strong> and edit featured collection category or collection name. Use an existing featured collection name to group the collection under an current featured collection (make sure you type it exactly the same), or choose a new title to create a brand new featured collection. <br /> <br /><strong>4 To remove a collection from a featured collection </strong><br /> Choose <strong>edit properties</strong> and delete the words in the featured collection category box. ";
+$lang["team_copy__introtext"]="Geben Sie die ID der Ressource ein, die Sie kopieren möchten. Nur die Metadaten der Ressource werden kopiert – hochgeladene Dateien werden nicht kopiert.";
+$lang["team_home__introtext"]="Willkommen in der Administration. Bitte benutzen Sie die untenstehenden Links, um die Ressourcen zu verwalten, auf Ressourcenanfragen zu antworten, Themen zu verwalten und die Systemeinstellungen zu bearbeiten.";
+$lang["team_report__introtext"]="Bitte wählen Sie einen Bericht und einen Zeitraum. Der Bericht kann in Microsoft Excel oder einer anderen Tabellenkalkulation geöffnet werden.";
+$lang["team_research__introtext"]="Organisieren und verwalten Sie Ihre \"Ressourcenanfragen\".<br /><br />Wählen Sie \"Anfrage bearbeiten\", um die Details der Anfrage zu sehen und sie einem Teammitglied zuzuweisen. Es ist möglich, eine Antwort auf einer existierenden Kollektion aufzubauen. Geben Sie dazu die Kollektions-ID in der Ansicht zur Bearbeitung ein.<br /><br />Wenn die Ressourcenanfrage zugewiesen ist, wählen Sie \"Kollektion bearbeiten\", um die Anfrage zu Ihren Kollektionen hinzuzufügen. So können Sie Ressourcen zu dieser Kollektion hinzufügen.<br /><br />Wenn die Kollektion vollständig ist, wählen Sie \"Anfrage bearbeiten\", stellen Sie den Status auf \"abgeschlossen\" und eine E-Mail wird automatisch an den Anfrager geschickt. Diese E-Mail enthält einen Link zur erstellten Kollektion, welche außerdem automatisch zu den Kollektionen des Benutzers hinzugefügt wird.";
+$lang["team_resource__introtext"]="Fügen Sie einzelne Ressourcen hinzu oder nutzen Sie den Stapelupload. Um einzelne Ressourcen zu bearbeiten, suchen Sie nach der Ressource und wählen Sie \"bearbeiten\" unter den \"Ressourcen-Werkzeugen\".";
+$lang["team_stats__introtext"]="Statistiken werden auf Basis der aktuellsten Daten erstellt. Aktivieren Sie die Checkbox, um alle Statistiken für das gewählte Jahr auszugeben.";
+$lang["team_user__introtext"]="In diesem Bereich können Sie Benutzer hinzufügen, löschen und verändern.";
+$lang["terms__introtext"]="Sie müssen zuerst die Nutzungsbedingungen akzeptieren.\n\n";
+$lang["terms__terms"]="Ihre Nutzungsbedingungen hier.";
+$lang["terms and conditions__terms and conditions"]="Ihre Nutzungsbedingungen hier.";
+$lang["themes__findpublic"]="Öffentliche Kollektionen sind Kollektionen, die von anderen Benutzern freigegeben wurden.";
+$lang["themes__introtext"]="Themen sind von unserem Team zusammengestellte Gruppen von Ressourcen.";
+$lang["themes__manage"]="Organisieren und bearbeiten Sie Ihre Themen. Themen sind besonders hervorgehobene Kollektionen. <br /><br /><strong>1 Um einen neuen Eintrag in einem Thema anzulegen, müssen Sie zuerst eine neue Kollektion anlegen</strong><br />Wählen Sie <strong>Meine Kollektionen</strong> aus der oberen Navigation und legen Sie eine neue <strong>öffentliche</strong> Kollektion an. Stellen Sie sicher, dass Sie einen Namen für Ihr Thema eingeben. Um die aktuelle Kollektion einem bestehenden Thema zuzuordnen, nutzen Sie einen bestehenden Themennamen. Wenn Sie einen noch nicht vergebenen Themennamen angeben, erstellen Sie ein neues Thema. <br /><br /><strong>2 Um den Inhalt eines bestehenden Themas zu ändern, </strong><br />wählen Sie <strong>\'Kollektion bearbeiten\'</strong>. Die Ressourcen in dieser Kollektion erscheinen unten im <strong>\'Meine Kollektionen\'</strong> Bereich. Nutzen Sie die Standardwerkzeuge um Resourcen zu bearbeiten, hizuzufügen oder zu löschen.<br /><br /><strong>3 Um eine Kollektion umzubenennen oder unter einem anderen Thema anzuzeigen,</strong><br />wählen Sie <strong>\'bearbeiten\'</strong> und bearbeiten Sie die Themenkategorie oder die Kollektionsnamen. <br /><br /><strong>4 Um eine Kollektion aus einem Thema zu entfernen,</strong><br />wählen Sie<strong> \'bearbeiten\'</strong> und löschen Sie den Eintrag im Feld \"Themen-Kategorie\".";
 $lang["upload__introtext"]="";
 $lang["upload_swf__introtext"]="";
 $lang["user_password__introtext"]="Bitte geben Sie Ihre E-Mail Adresse ein. Ihre Zugangsdaten werden dann an per E-Mail an Sie versendet.";
@@ -2281,18 +2277,42 @@ $lang["resetpassword"]="Reset Passwort";
 $lang["customaccesspreventshare"]="Sie haben keine Berechtigung um eine oder mehrere Ressourcen in dieser Kollektion weiterzugeben";
 
 $lang["prevent_user_group_sharing_externally"]="Verhindern, dass Benutzer Ressourcen an Externe weitergeben können";
-
 $lang["allow_user_group_selection_for_access_when_sharing_externally"]="Einer Benutzergruppe erlauben beim Weitergeben von Ressourcen einen individuellen Zugang zu vergeben";
 $lang["share_using_permissions_from_user_group"]="Externe Weitergabe mit den Rechten der Benutzergruppe";
 $lang["externalshare_using_permissions_from_user_group"]="Wählen Sie die Benutzergruppe für einen Zugang zu den weitergegebenen Ressourcen aus um Sie an einen externen Benutzer zu mailen";
 $lang["delete__nopassword"]="Wenn Sie fortfahren, wird diese Ressource dauerhaft gelöscht.";
-
 $lang["collection_download_too_large"]="Entschuldigen Sie bitte. Diese Kollektion ist zu groß um sie als eine einzelne Datei herunterzuladen. Versuchen Sie die Größe der Kollektion zu reduzieren, oder wählen Sie eine kleinere Größe.";
 $lang["all__passwordnewemailhtml"]="[img_gfx/titles/title.gif]<br /><br />Bitte klicken Sie auf den unten angeführten Link um ein neues Passwort zu Ihrem Account zu erstellen.<br /><br />URL: <a href=\"[url]\" target=\"_blank\" >[url]</a><br />Benutzername: [username]<br />[text_footer]" ;
-
 $lang['disk_size_no_upload_heading']="Upload im Moment nicht möglich";
 $lang['disk_size_no_upload_explain']="Aus Speicherplatzgründen ist ein Upload im Moment nicht möglich. Bitte entschuldigen Sie die Unannehmlichkeiten.";
 
+$lang["systemlog"]="Systemlog";
+$lang["system_performance"]="Systemleistung";
+$lang["mysql_throughput"]="MySQL Durchsatz";
+$lang["cpu_benchmark"]="CPU Leistung";
+$lang["disk_write_speed"]="Disk Schreibgeschwindigkeit";
+
+/* System Config */
+$lang['systemconfig'] = 'Systemkonfiguration';
+$lang['systemconfig_description'] = 'Die Optionen auf dieser Seite gelten systemweit und betreffen auch Benutzern zugängliche Funktionen. Bitte berücksichtigen Sie, dass einige Optionen benutzerabhängig sind, und von diesen überschrieben werden können.';
+
+/* System Console */
+$lang["systemconsole"]="Systemmonitor";
+
+/* Manage slideshows */
+$lang["manage_slideshow"] = "Slideshow anpassen";
+$lang["action-add-new"] = "Neues Bild hinzufügen";
+$lang['action-replace'] = 'Ersetzen';
+$lang["action-submit-button-label"] = "Hinzufügen";
+$lang["slideshow_use_static_image"] = "Zeige nur ein zufälliges Bild aus der Auswahl (das Bild ändert sich dann nur beim Neuladen der Seite)";
+
+/* Manage external shares */
+$lang['permission_manage_external_shares'] = 'Kann externe Links mit Ablaufdatum "Nie" verwalten';
+$lang['manage_external_shares'] = 'Externe Links verwalten';
+
+/* Dash */
+$lang["managedefaultdash"]="Kacheln für alle Benutzer verwalten";
+$lang["manage_user_group_dash_tiles"]="Kacheln für Benutzergruppen verwalten";
 
 # Start - User Dash Strings
 $lang["savethissearchtodash"]="Als Kachel-Element im Dashboard speichern";
