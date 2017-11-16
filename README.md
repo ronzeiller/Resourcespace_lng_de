@@ -1,4 +1,4 @@
-# German translation file for Resource Space 8.3
+# German translation file for Resource Space
 
   - All $lang[] variables from the Resource Space version 8.3 10754 are now in the de.php file
   - Many new translations (some, especially in the admin section are still missing)
