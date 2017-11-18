@@ -240,7 +240,7 @@ $lang["changethemeto"] = "Darstellung wechseln zu";
 # Search bar
 $lang["simplesearch"]="Einfache Suche";
 $lang["searchbutton"]="Suchen";
-$lang["clearbutton"]="zurücksetzen";
+$lang["clearbutton"]="Zurücksetzen";
 $lang["bycountry"]="Nach Land";
 $lang["bydate"]="Nach Datum";
 $lang["anyyear"]="beliebiges Jahr";
@@ -376,8 +376,8 @@ $lang["private"]="privat";
 $lang["public"]="öffentlich";
 $lang["attachedusers"]="zugeordnete Benutzer";
 $lang["themecategory"]="Themenkategorie";
-$lang["collection_set_theme_category"]="Add to featured collection category";
-$lang["collection_set_theme_category_title"]="Add collection to featured collection category";
+$lang["collection_set_theme_category"]="";	// Add to featured collection category
+$lang["collection_set_theme_category_title"]="Kollektion zu einer Themenkategorie hinzufügen";	// "Add collection to featured collection category";
 $lang["theme"]="Thema";
 $lang["newcategoryname"]="ODER: Tragen sie eine neue Themenkategorie ein...";
 $lang["allowothersaddremove"]="Anderen Benutzern das hinzufügen/entfernen von Ressourcen erlauben";
@@ -902,7 +902,7 @@ $lang["access3"]="benutzerdefiniert";
 $lang["statusandrelationships"]="Status und Beziehungen";
 
 # Lists
-$lang["months"]=array("Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember");
+$lang["months"]=array("Jänner","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember");
 $lang["false-true"]=array("Falsch","Wahr");
 
 # Formatting
@@ -2332,32 +2332,32 @@ $lang["returntopreviouspage"]="Zurück zur vorigen Seite";
 $lang["showresourcecount"]="Ressourcenanzahl zeigen?";
 $lang["tilebin"]="Entfernen";
 $lang["last"]="Letztes";
-$lang["managedefaultdash"]="Dashboard Kachel-Elemente";
+$lang["managedefaultdash"]="Dashboard Kachelelemente";
 $lang["dashtile"]="Dashboard Kachel-Element";
 $lang["manage_own_dash"]="Mein Dashboard";
-$lang["manage_all_dash_h"]="Manage default dash / all user tiles (Requires h permission)";
-$lang["manage_all_dash"]="Manage default dash / all user tiles";
+$lang["manage_all_dash_h"]="Voreingestellte Kachelelemente verwalten -> Alle Benutzer / Kacheln (benötigt h Erlaubnis)";
+$lang["manage_all_dash"]="Kachelelemente verwalten -> Dashboard / Alle Kachelelemente";
 $lang["dashtiledeleteaction"]="Welche Löschen-Aktion soll vorgenommen werden?";
 $lang["confirmdashtiledelete"]="Kachel-Element von meinem Dashboard löschen";
 $lang["dashtiledeleteusertile"]="Dieses Kachel-Element, dass Sie erstellt haben wird permanent gelöscht wenn Sie fortfahren";
 $lang["confirmdefaultdashtiledelete"]="Kachel-Element für alle Benutzer löschen";
 $lang["dashtiledelete"]="Kachel-Element Löschen";
-$lang["error-missingtileheightorwidth"]="Fehlende Kachel-Element Höhe oder Breite";
-$lang["dashtileimage"]="Dashboard Kachel-Element Bild";
+$lang["error-missingtileheightorwidth"]="Fehlende Kachelelement Höhe oder Breite";
+$lang["dashtileimage"]="Dashboard Kachelelement Bild";
 $lang["dashtilesmalldevice"]="Die gewünschte Drag & Drop Funktionalität ist auf schmalen Schirmen nicht möglich";
-$lang["dashtileshow"]="Kachel-Element zeigen";
-$lang["dasheditmodifytiles"]="Edit / modify dash tiles available";
+$lang["dashtileshow"]="Kachelelement zeigen";
+$lang["dasheditmodifytiles"]="Bestehende Kachelelemente bearbeiten";
 $lang['confirmdeleteconfigtile']="This tile is controlled by configuration option(s). To permanently delete this tile, turn off the relevant options and then perform this action again.";
 $lang["error-dashactionmissing"]="No action or invalid data was submitted to this page. No tile template available to build. <br />Please return to this page from a suitable creation / edit link";
 $lang["dasheditchangeall_users"]="Turning off this setting will not remove this tile from all dashes, you must do this from manage all user tiles. However, new users will no longer receive this tile on their dash.";
 $lang["dashtilevisitlink"]="Link im Browser öffnen";
-$lang["alluserprebuiltdashtiles"]="Create pre-constructed dash tiles (added for all users)";
-$lang["manageowndashinto"]="Manage dash tiles available for your dash. You can add / remove or edit tiles on your dash if you have the permissions to do so.";
-$lang['manage_all_user_dash_tiles_note'] = 'Note: Tiles shown with a red border are hidden to the users. Admins see them as there are other tiles available but hidden from these users';
+$lang["alluserprebuiltdashtiles"]="Fertige Kachelelemente erzeugen (Für alle Benutzer sichtbar))";
+$lang["manageowndashinto"]="Kachelelemente auf der Startseite hinzufügen oder löschen (je nachdem wie Berechtigungen gesetzt sind)";
+$lang['manage_all_user_dash_tiles_note'] = 'Anmerkung: Kachelelemente mit rotem Rand sind für Benutzer nicht sichtbar. (Admins see them as there are other tiles available but hidden from these users';
 
 # User group dash tiles
-$lang['manage_user_group_dash_tiles']  = 'Manage user group dash tiles';
-$lang['who_should_see_dash_tile']      = 'Wer soll dieses Kachel-Element sehen?';
+$lang['manage_user_group_dash_tiles']  = 'Kachelelemente für Benutzergruppen verwalten';
+$lang['who_should_see_dash_tile']      = 'Wer soll dieses Kachelelement sehen?';
 $lang['dash_tile_audience_me']         = 'Nur ich';
 $lang['dash_tile_audience_all_users']  = 'Alle Benutzer';
 $lang['dash_tile_audience_user_group'] = 'Spezielle Benutzergruppe(n)';
@@ -2381,11 +2381,11 @@ $lang["tile_ftxt"]="Nur-Text";
 # * End - User Dash Strings *
 
 # * Start - Plugin Category Strings *
-$lang["plugin_category_general"]="General";
+$lang["plugin_category_general"]="Generell";
 $lang["plugin_category_api"]="API";
 $lang["plugin_category_advanced"]="Erweitert";
 $lang["plugin_category_design"]="Design";
-$lang["plugin_category_ecommerce"]="Ecommerce";
+$lang["plugin_category_ecommerce"]="E-Commerce";
 $lang["plugin_category_sharing"]="Externe Datenweitergabe";
 # * End - Plugin Category Strings *
 
@@ -2418,18 +2418,18 @@ $lang['trash_bin_delete_dialog_title'] = 'Ressourcen aus der aktuellen Kollektio
 $lang["managecontent_defaulttextused"]="!! The text for the default language (?) is currently being used. Edit the text below to create an alternative version for this language / user group selection !!";
 $lang["myaccount"]="Mein Account";
 $lang["userpreferences"]="Meine Einstellungen";
-$lang["modifyuserpreferencesintro"]="Options on this page allow you to make changes to some of the functionality  and interface that are available to you.";
+$lang["modifyuserpreferencesintro"]="Einrichten der persönlichen Einstellungen für Funktionen und das persönliche Dashboard.";
 
 # User preferences
-$lang['userpreference_colourtheme'] = 'Colour theme';
+$lang['userpreference_colourtheme'] = 'Farbeinstellung / Thema';
 $lang["userpreferencecolourtheme"]="Interface colour theme";
 $lang['userpreference_user_interface'] = 'User interface';
-$lang['userpreference_enable_option'] = 'Enable';
-$lang['userpreference_disable_option'] = 'Disable';
+$lang['userpreference_enable_option'] = 'Aktivieren';
+$lang['userpreference_disable_option'] = 'Deaktivieren';
 $lang['userpreference_default_sort_label'] = 'Sortierung';
-$lang['userpreference_default_perpage_label'] = 'Default per page';
-$lang['userpreference_default_display_label'] = 'Default display';
-$lang['userpreference_use_checkboxes_for_selection_label'] = 'Use checkboxes to add to collection';
+$lang['userpreference_default_perpage_label'] = 'Default pro Seite';
+$lang['userpreference_default_display_label'] = 'Default Anzeige';
+$lang['userpreference_use_checkboxes_for_selection_label'] = 'Checkbox verwenden zum Hinzufügen zur Kollektion';
 $lang['userpreference_resource_view_modal_label'] = 'Resource view modal';
 $lang["userpreference_modal_default"] = "Show standard pages in a modal (popup) window where enabled?";
 $lang['userpreference_thumbs_default_label'] = 'Default collection bar display';
@@ -2625,51 +2625,51 @@ $lang["report_external_share"]="External share";
 $lang['report_add_to_dash'] = $lang['add_to_dash'] = 'Add to dash';
 $lang["collection_restype_blocked"]="The following resource types cannot be added";
 
-$lang["retina_mode"]="Retina mode";
+$lang["retina_mode"]="Retina Modus";
 
 $lang["private-api-key"]="Private API key";
 $lang["can_edit_resource_type"] = "Edit access to resource type: ";
 
-$lang["userpreference_headersize"]="Header size";
-$lang["headersmall"]="Small";
-$lang["headermid"]="Medium";
-$lang["headerlarge"]="Large";
+$lang["userpreference_headersize"]="Größe der Überschrift";
+$lang["headersmall"]="Klein";
+$lang["headermid"]="Mittel";
+$lang["headerlarge"]="Groß";
 
 // Responsive
-$lang["responsive_configtitle"]="Responsive";
-$lang["responsive_main_menu"]="Menu";
+$lang["responsive_configtitle"]="Responsiv";
+$lang["responsive_main_menu"]="Menü";
 $lang["responsive_settings_menu"]="Account";
-$lang["responsive_more"]="More...";
-$lang["responsive_less"]="Less...";
-$lang['responsive_collectiontogglehide'] = "Hide";
-$lang['linkedheaderimgsrc']="Location of the logo image in the header (Defaults to ResourceSpace):";
+$lang["responsive_more"]="Mehr...";
+$lang["responsive_less"]="Weniger...";
+$lang['responsive_collectiontogglehide'] = "Verstecken";
+$lang['linkedheaderimgsrc']="Pfad zum Logo, das im Header angezeigt werden soll:";
 $lang['responsive_result_settings'] = 'Result Settings';
 $lang['responsive_view_full_site'] = 'View full site';
 // end of Responsive
 
 # Actions
-$lang["actions_myactions"] = "My actions";
+$lang["actions_myactions"] = "Meine Aktionen";
 $lang["actions_introtext"] = "You can configure the criteria for actions that appear here by changing your user preferences";
 $lang["actions_noactions"] = "You have no outstanding actions";
 $lang["actions_resource_review"] = "Show me editable resources in my actions list";
 $lang["actions_modal"] = "Show action links e.g. user requests, resource requests in a modal (popup) window?";
 $lang["actions_resource_review_default"] = "Show editable resources by default in action lists";
 $lang["actions_notify_states"] = "Editable resources in the following states will be shown";
-$lang["actions_resource_types_hide"] = "Do not show editable resources of the following types";
+$lang["actions_resource_types_hide"] = "Nicht zeigen folgender, editierbarer Ressource-Typen";
 $lang["actions_resource_requests"] = "Show resource requests in my actions list";
 $lang["actions_resource_requests_default"] = "Show resource requests by default in action lists";
 $lang["actions_account_requests"] = "Show user account requests in my actions list";
 $lang["actions_account_requests_default"] = "Show account requests by default in action lists";
 $lang["actions_approve_hide_groups"] = "Do not show account requests for the following groups";
-$lang["actions_type_resourcereview"] = "Resource review";
-$lang["actions_type_resourcerequest"] = "Resource request";
-$lang["actions_type_userrequest"] = "Account request";
+$lang["actions_type_resourcereview"] = "Ressourcen Überarbeitung";
+$lang["actions_type_resourcerequest"] = "Ressourcen Anfrage";
+$lang["actions_type_userrequest"] = "Account Anfrage";
 $lang["actions_add_editable_to_collection"] = "Add all editable resources to collection";
 $lang["field_search_no_results"] = "Try without specifying a metadata field, or";
 $lang["actions_view_editable_as_resultset"]="View resources to review as a result set";
 
 $lang["refinemetadata"]="Refine metadata";
-$lang["saveandnext"]="Save and next";
+$lang["saveandnext"]="Sichern und Nächstes";
 
 $lang["upload_sequence"]="Upload sequence";
 $lang["default_upload_sequence"]="Default upload sequence";
