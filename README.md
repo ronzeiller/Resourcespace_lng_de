@@ -1,7 +1,6 @@
 # German translation file for Resource Space
+# Deutsche Übersetzungsdatei für ResourceSpace
 
-  - All $lang[] variables from the Resource Space version 8.3 10754 are now in the de.php file
-  - Many new translations (some, especially in the admin section are still missing)
   
 ## How to use
 
@@ -9,4 +8,6 @@ Copy the file into the /language folder
 
 If you have new translations, please send me a PR
 
-Ronnie Zeiller, 2017
+## Version History
+9.2.2019  Update alle $lang[] Array-Felder der Version 8.6.12633 aktualisiert
+16.11.2017  alle $lang[] Array-Felder der Version 8.3.10754 aus dem en.php kopiert und zum größten Teil übersetzt
