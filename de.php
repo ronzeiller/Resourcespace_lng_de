@@ -17,6 +17,7 @@
 # Updated by Stefan Wild 20140619 for version 5550, translated the missing $lang keys from the en.php.
 # Updated by Stefan Wild 20141215 for version 6127, translated the missing $lang keys from the en.php.
 # Updated by Ronnie Zeiller 20171116 for version 10754, some more translations, added all the missing $lang keys from en.php
+# Updated by Ronnie Zeiller 20190209 for version 12633, some more translations, added all the missing $lang keys from en.php
 
 ## begin $lang keys missing in en.php!!
 $lang["plupload_log_hide"]="Upload Log verbergen";
@@ -107,11 +108,13 @@ $lang["fieldtype-dynamic_tree_in_development"]="Dynamischer Baum (in Entwicklung
 $lang["fieldtype-radio_buttons"]="Radiobuttons";
 $lang["fieldtype-warning_message"]="Warnmeldung";
 
+
 # Property labels (for the default properties)
 $lang["documentation-permissions"]="Weitere Informationen über die Berechtigungen finden Sie in der <a href=../../documentation/permissions.txt target=_blank>Berechtigungen Hilfe-Datei</a>.";
 $lang["property-reference"]="Referenz";
 $lang["property-name"]="Name";
 $lang["property-permissions"]="Berechtigungen";
+$lang["property-permissions_inherit"]="Von der übergeordneten Gruppe übernehmen";
 $lang["information-permissions"]="HINWEIS: Globale Berechtigungen aus der config.php könnten außerdem in Kraft sein";
 $lang["property-fixed_theme"]="Festes Theme";
 $lang["property-parent"]="Übergeordneter Eintrag";
@@ -138,10 +141,12 @@ $lang["property-field_type"]="Feldtyp";
 $lang["property-field_constraint"]="Feld Einschränkung";
 $lang["property-field_constraint-none"]="Keine";
 $lang["property-field_constraint-number"]="Nummer";
+$lang["property-field_constraint-singlekeyword"]="Einzene Auswahl";
 $lang["property-field_raw_edtf"]="If date range is input in EDTF format store raw data in this field";
 
-$lang["property-options"]="Optionen";
+$lang["property-options"]="Comma separated list of options. The first option will be the default option. If you do not wish to set a default value, use a starting comma to default to blank. E.g. <br />,Option1,Option2 - will default to blank.";
 $lang['property-options_edit_link'] = 'Optionen verwalten';
+$lang['property-automatic_nodes_ordering_label'] = 'Automatische Sortierung';
 $lang["property-required"]="Pflichtfeld";
 $lang["property-order_by"]="Sortieren nach";
 $lang["property-indexing"]="<b>Indizieren</b>";
@@ -167,6 +172,8 @@ $lang['property-inherit_global_fields'] = 'Globale Felder übernehmen';
 $lang['information-inherit_global_fields'] = 'Sollen globale Felder in diesen Ressource Typen übernommen werden?';
 $lang["property-smart_theme_name"]="Smart-Theme Name";
 $lang["property-exiftool_field"]="Exiftool Feld";
+$lang['property-fits_field'] = 'FITS field';
+$lang['information-fits_field'] = 'FITS (File Information Tool Set) field will overwrite Exiftool values if a value can be found!';
 $lang["property-exiftool_filter"]="Exiftool Filter";
 $lang["property-help_text"]="Hilfetext";
 $lang["property-tooltip_text"]="Tooltip Text";
@@ -254,6 +261,8 @@ $lang["largethumbs"]="groß";
 $lang["largethumbstitle"]="Große Vorschaubilder";
 $lang["smallthumbs"]="klein";
 $lang["smallthumbstitle"]="Kleine Vorschaubilder";
+$lang["strip"]="Strip";
+$lang["striptitle"]="Strip view";
 $lang["list"]="Liste";
 $lang["listtitle"]="Listenansicht";
 $lang["perpage"]="pro Seite";
@@ -272,7 +281,7 @@ $lang["gotoadvancedsearch"]="zur erweiterten Suche";
 $lang["viewnewmaterial"]="neue Einträge anzeigen";
 $lang["researchrequestservice"]="Suchanfrage";
 
-# Team Centre
+# Admin
 $lang["manageresources"]="Ressourcen verwalten";
 $lang["overquota"]="Speicherplatz erschöpft; es können keine weiteren Ressourcen hinzugefügt werden";
 $lang["managearchiveresources"]="Archivierte Ressourcen verwalten";
@@ -280,7 +289,6 @@ $lang["managethemes"]="Themen verwalten";
 $lang["manageresearchrequests"]="Suchanfragen verwalten";
 $lang["manageusers"]="Benutzer verwalten";
 $lang["managecontent"]="Inhalte verwalten";
-$lang["viewstatistics"]="Statistiken ansehen";
 $lang["viewreports"]="Berichte ansehen";
 $lang["viewreport"]="Bericht ansehen";
 $lang["treeobjecttype-report"]=$lang["report"]="Bericht";
@@ -306,7 +314,7 @@ $lang["pluginssetup"]="Plugins verwalten";
 $lang["pluginmanager"]="Plugin Manager";
 $lang["users"]="Benutzer";
 
-# Team Centre - Bulk E-mails
+# Admin - Bulk E-mails
 $lang["emailrecipients"]="E-Mail Empfänger";
 $lang["emailsubject"]="E-Mail Betreff";
 $lang["emailtext"]="E-Mail Text";
@@ -316,10 +324,10 @@ $lang["emailsent"]="E-Mail wurde gesendet.";
 $lang["mustspecifyoneuser"]="Sie müssen mindestens einen Benutzer auswählen";
 $lang["couldnotmatchusers"]="Keine passende Benutzer gefunden (oder Benutzer mehrfach angegeben)";
 
-# Team Centre - User management
+# Admin - User management
 $lang["comments"]="Kommentare";
 
-# Team Centre - Resource management
+# Admin - Resource management
 $lang["viewuserpending"]="Durch Benutzer zur Freischaltung eingereichte Ressourcen anzeigen";
 $lang["userpending"]="Durch Benutzer zur Freischaltung eingereichte Ressourcen";
 $lang["viewuserpendingsubmission"]="Durch Benutzer hochgeladene Ressourcen anzeigen";
@@ -428,6 +436,7 @@ $lang["savedsearch"]="Gespeicherte Suche";
 $lang["mustspecifyoneusername"]="Bitte geben Sie mindestens einen Benutzernamen an";
 $lang["couldnotmatchallusernames"]="Es konnten nicht alle passenden Benutzer gefunden werden";
 $lang["emailcollectionmessage"]="hat Ihnen eine Kollektion an Ressourcen von $applicationname gesendet, welche auf der Seite 'Meine Kollektionen' zu finden ist."; # suffixed to user name e.g. "Fred has e-mailed you a collection.."
+$lang['collectionprivate_attachedusermessage']="%user% has added you to their collection '%colname%'.";
 $lang["nomessage"]="Keine Nachricht";
 $lang["emailcollectionmessageexternal"]="hat Ihnen über $applicationname eine Kollektion von Ressourcen gesendet."; # suffixed to user name e.g. "Fred has e-mailed you a collection.."
 $lang["clicklinkviewcollection"]="Klicken Sie auf den untenstehenden Link um die Kollektion anzuzeigen.";
@@ -496,6 +505,7 @@ $lang["decreasegamma"]="Gamma-Wert verringern (dunkler)";
 $lang["restoreoriginal"]="Original wiederhestellen";
 $lang["createpreviews"]="Vorschaubilder/Vorschaugrößen erstellen";
 $lang["recreatepreviews"]="Vorschaugrößen neu erstellen";
+$lang["recreatepreviews_pending"]="Resource has been flagged for preview recreation.";
 $lang["retrypreviews"]="Vorschaugrößen erneut neu erstellen";
 $lang["specifydefaultcontent"]="Standard-Inhalt für neue Ressourcen festlegen";
 $lang["properties"]="Eigenschaften";
@@ -545,6 +555,7 @@ $lang["fileupload"]="Datei-Upload";
 $lang["clickbrowsetolocate"]="für eine Dateiauswahl bitte klicken";
 $lang["resourcetools"]="Ressourcen-Werkzeuge";
 $lang["fileinformation"]="Datei-Information";
+$lang["filedimensions"]="Datei Abmessungen";
 $lang["options"]="Optionen";
 $lang["previousresult"]="voriges Ergebnis";
 $lang["viewallresults"]="alle Ergebnisse anzeigen";
@@ -565,6 +576,7 @@ $lang["offlineresource"]="Offline-Ressource";
 $lang["action-request"]="Anfragen";
 $lang["request"]="Anfrage";
 $lang["requestlog"]="Anfrageprotokoll";
+$lang['findtextinpdf'] = 'Finde Text im PDF';
 $lang["searchforsimilarresources"]="Nach ähnlichen Ressourcen suchen";
 $lang["clicktoviewasresultset"]="diese Ressourcen zusammenfassend anzeigen";
 $lang["searchnomatches"]="Keine passenden Suchergebnisse verfügbar.";
@@ -586,6 +598,7 @@ $lang["statuscode"]="Statuscode";
 $lang["unoconv_pdf"]="erzeugt durch Open Office";
 $lang['calibre_pdf']="erzeugt durch Calibre";
 $lang["resourcenotfound"]="Ressource nicht gefunden.";
+$lang["resource_custom_access"] = "Resource benutzerdefinierter Zugang";
 $lang['remove_custom_access_users_groups'] = 'Benutzer und Gruppen mit benutzerdefiniertem Zugang';
 $lang['remove_custom_access_no_users_found'] = 'Keine Benutzer und Gruppen mit benutzerdefiniertem Zugang gefunden.';
 $lang['action-generate_pdf'] = 'PDF erstellen';
@@ -601,11 +614,13 @@ $lang["log-E"]="Ressource via E-Mail weitergegeben an ";//  + notes field
 $lang["log-v"]="Ressource angesehen";
 $lang["log-x"]="Ressource gelöscht";
 $lang["log-l"]="Eingeloggt"; # For user entries only.
+$lang["log-o"]="Geändert beigesteuert von";
 $lang["log-t"]="Datei transformiert";
 $lang["log-s"]="Status geändert";
 $lang["log-a"]="Zugriff geändert";
 $lang["log-r"]="Metadaten zurückgesetzt";
 $lang["log-b"]="Alternative Datei erstellt";
+$lang["log-y"]="Alternative Datei gelöscht";
 $lang["log-missinglang"]="[type] (Sprache fehlt)"; # [type] will be replaced.
 $lang['log-adminpermissionsrequired'] = 'Voller Admin-Zugang erforderlich!';
 $lang['log-removedcustomuseraccess'] = 'Entfernen des Zugangs von: ';
@@ -621,6 +636,7 @@ $lang["log_code_e"]="Bearbeitet";
 $lang["log_code_E"]="Gemailt";
 $lang["log_code_l"]=$lang["log-l"];
 $lang["log_code_m"]="Multi-bearbeitet";
+$lang['log_code_O']='Benutzer opt-in';
 $lang["log_code_p"]="Bezahlt";
 $lang["log_code_r"]="Rückgängig gemacht oder nochmals hochgeladen";
 $lang["log_code_R"]="Aufgenommen";
@@ -1021,6 +1037,8 @@ $lang['relateallresources_confirmation'] = 'Are you sure you want to RELATE ALL 
 # New for 1.5
 $lang["columns"]="Spalten";
 $lang["contactsheetconfiguration"]="Konfiguration Kontaktblatt";
+$lang["contactsheet_data_field_value_limit"] = "Maximale Zeichen pro Feld";
+$lang["contactsheet_data_toolong"]="Zu viele Daten für eine Seite. Bitte reduzieren Sie die Anzahl der maximalen Zeichen pro Feld, die Anzahl der anzuzeigenden Felder oder wählen Sie eine alternative Seitenansicht";
 $lang["thumbnails"]="Vorschaubilder";
 $lang["contactsheetintrotext"]="Bitte wählen Sie die Blattgröße und die Spaltenanzahl für Ihr Kontaktblatt.";
 $lang["size"]="Größe";
@@ -1163,8 +1181,6 @@ $lang["setup-introtext"]="Danke, dass Sie sich für ResourceSpace entschieden ha
 $lang["setup-checkerrors"]="Fehler gefunden.<br />Bitte beheben Sie diese Fehler und laden Sie dann diese Seite erneut.";
 $lang["setup-errorheader"]="In Ihrer Konfiguration wurden Fehler gefunden.  Eine detaillierte Fehlerbeschreibung finden Sie unten.";
 $lang["setup-warnheader"]="Einige Ihrer Einstellungen haben zu Warnungen geführt.  Details finden Sie unten. Das bedeutet nicht, dass Ihre Konfiguration fehlerhaft ist.";
-$lang["setup-basicsettings"]="Grundeinstellungen";
-$lang["setup-basicsettingsdetails"]="Dies sind die Grundeinstellungen für Ihre ResourceSpace Installation. Pflichtfelder sind mit einem <strong>*</strong> markiert.";
 $lang["setup-dbaseconfig"]="Datenbank Konfiguration";
 $lang["setup-mysqlerror"]="Fehler in Ihren MySQL Einstellungen:";
 $lang["setup-mysqlerrorversion"]="MySQL Version 5 oder neuer benötigt.";
@@ -1244,6 +1260,7 @@ $lang["setup-if_ftpserver"]="Nur notwendig, wenn Sie planen, die FTP Upload Funk
 $lang["setup-smtp-settings"]="SMTP Einstellungen";
 $lang["setup-if-usesmtp"]="Verwendung eines externen SMTP-Servers um E-Mails zu versenden (z.B. Gmail). Verwendet PHPMailer";
 $lang["setup-if-smtpsecure"]="'', 'tls' or 'ssl'. Für Gmail ist 'tls' oder 'ssl' notwendig.";
+
 $lang["setup-if-smtphost"]="Hostname, z.B. 'smtp.gmail.com'.";
 $lang["setup-if-smtpport"]="Port Nummer, z.B. 465 für SSL bei Gmail.";
 $lang["setup-if-smtpauth"]="Sende Anmeldedaten an den SMTP-Server (falsch für anonymen Zugang)";
@@ -1258,6 +1275,9 @@ $lang["more-information"]="Weitere Informationen";
 $lang["setup-structuralplugins"]="System Templates";
 $lang["setup-headercolourstyleoverride"]="Benutzerdefinierte Farbe im Header";
 $lang["setup-headerlinkstyleoverride"]="Benutzerdefinierte Link-Farbe im Header";
+$lang["setup-homecolourstyleoverride"]="Custom intro text, dash tile and simple search colour";
+$lang["setup-collectionbarbackground"]="Custom collection bar primary colour";
+$lang["setup-collectionbarforeground"]="Custom collection bar secondary colour";
 
 # Collection log - actions
 $lang["collectionlog"]="Kollektionen Log";
@@ -1279,6 +1299,8 @@ $lang["collectionlog-X"]="Kollektion gelöscht";
 $lang["collectionlog-b"]="Stapelverarbeitung";
 $lang["collectionlog-A"]="Zugang geändert auf "; // +notes field
 $lang["collectionlog-Z"]="Kollektion heruntergeladen";
+$lang["collectionlog-U"]="Benutzern Änderung erlauben";
+$lang["collectionlog-e"]="Bearbeitet"; // Generic edit
 
 $lang["viewuncollectedresources"]="Ressourcen anzeigen, die nicht in einer Kollektion enthalten sind";
 
@@ -1384,6 +1406,7 @@ $lang['plugins-noneinstalled'] = "Derzeit keine Plugins aktiviert.";
 $lang['plugins-noneavailable'] = "Derzeit keine Plugins verfügbar.";
 $lang['plugins-availableheader'] = 'Verfügbare Plugins';
 $lang['plugins-installedheader'] = 'Derzeit aktivierte Plugins';
+$lang['plugins-search-results-header'] = 'Gefundene Plugins';
 $lang['plugins-author'] = 'Autor';
 $lang['plugins-version'] = 'Version';
 $lang['plugins-instversion'] = 'Installierte Version';
@@ -1415,6 +1438,8 @@ $lang['plugins-goodrsc'] = 'Konfiguration erfolgreich hochgeladen. Klicken Sie d
 $lang['plugins-badrsc'] = 'Ungültige .rsc Datei.';
 $lang['plugins-wrongplugin'] = 'Diese .rsc Datei ist für das %plugin Plugin. Bitte wählen Sie eine Datei für dieses Plugin.'; // %plugin is replaced by the name of the plugin being configured.
 $lang['plugins-configvar'] = 'Setzt Konfigurationsvariable: $%cvn'; //%cvn is replaced by the name of the config variable being set
+$lang['plugins-search-plugin-placeholder'] = 'Suche nach Plugins';
+$lang['plugins-disabled-plugin-message'] = 'In den Einstellungen deaktiviert';
 
 #Location Data
 $lang['location-title'] = 'Geodaten';
@@ -1423,6 +1448,7 @@ $lang['location-edit'] = 'Geodaten bearbeiten';
 $lang['location-details'] = 'Karte doppelklicken, um einen Pin zu platzieren. Anschließend können Sie dann Pin an die gewünschte Stelle ziehen.';
 $lang['location-missing'] = 'Die folgenden Ressourcen haben keine Geodaten und werden nicht angezeigt:';
 $lang['location-noneselected']="Kein Ort ausgewählt";
+$lang['location-noneselected']="Keine Ortsdaten";
 $lang['location'] = 'Ort';
 $lang['mapzoom'] = 'Karten Zoom';
 $lang['openstreetmap'] = "OpenStreetMap";
@@ -1474,10 +1500,10 @@ $lang["embeddedvalue"]="Eingebetteter Wert";
 $lang["exiftooltag"]="Exiftool Tag";
 $lang["error"]="Fehler";
 $lang["exiftoolnotfound"]="Exiftool konnte nicht gefunden werden.";
- $lang["existing_tags"]="Existierende Exiftool Tags";
- $lang["new_tags"]="Neue Exiftool Tags (werden beim Herunterladen hinzugefügt)";
- $lang["date_of_download"]="[Datum des Downloads]";
- $lang["field_ref_and_name"]="%ref% - %name%"; # %ref% and %name% will be replaced, e.g. 3 – Country
+$lang["existing_tags"]="Existierende Exiftool Tags";
+$lang["new_tags"]="Neue Exiftool Tags (werden beim Herunterladen hinzugefügt)";
+$lang["date_of_download"]="[Datum des Downloads]";
+$lang["field_ref_and_name"]="%ref% - %name%"; # %ref% and %name% will be replaced, e.g. 3 – Country
 $lang['metadata-report-fits_section'] = 'FITS tags mapped';
 
  $lang["indicateusage"]="Bitte beschreiben Sie die geplante Nutzung dieser Ressource.";
@@ -1494,6 +1520,7 @@ $lang['metadata-report-fits_section'] = 'FITS tags mapped';
  $lang["uploadertryjava"]="Wenn Sie Probleme mit dem Upload haben, versuchen Sie bitte den <strong>Java Uploader</strong>.";
  $lang["uploadertryplupload"]="<strong>NEW</strong> - Versuchen Sie den neuen Uploader.";
  $lang["getjava"]="Um sicherzustellen, dass Sie die neueste Java Version installiert haben, besuchen Sie bitte die Java Website.";
+ 
 
  $lang["all"]="Alle";
  $lang["allresourcessearchbar"]="Alle Ressourcen";
@@ -1583,6 +1610,7 @@ $lang['report_periodic_email_option_all_users'] = 'alle Benutzer';
 $lang['report_periodic_email_option_selected_user_groups'] = 'gewählte Benutzergruppe(n)';
 $lang['report_periodic_email_unsubscribe_title'] = 'Abmelden von den periodischen E-Mails';
 $lang['report_periodic_email_unsubscribe_confirmation'] = 'Bitte die Abmeldung bestätigen';
+
 
 #Column headers (for the default reports)
 $lang["columnheader-keyword"]="Stichwort";
@@ -1809,6 +1837,14 @@ $lang["error-permissiondenied"]="Zugriff verweigert!";
 $lang["error-permissions-login"]="Bitte loggen Sie sich ein, um diese Seite anzusehen";
 $lang["error-oldphp"] = "Benötigt PHP Version %version oder höher."; # %version will be replaced with, e.g., "5.2"
 $lang["error-collectionnotfound"]="Kollektion nicht gefunden.";
+$lang["error-csrf-verification"] = "CSRF verification";
+$lang["error-csrf-verification-failed"] = "CSRF verification failed! Try reloading page.";
+$lang["error-method-not_allowed"] = "Method Not Allowed.";
+$lang["error-405-method-not_allowed"] = "405 Method Not Allowed.";
+$lang["error-403-forbidden"] = "403 Nicht erlaubt.";
+$lang["error-plugin-not-activated"] = "Plugin nicht aktiviert";
+$lang["error-failed-to-delete"] = "Konnte Datei nicht löschen";
+$lang["error-failed-to-move"] = "Konnte die Datei nicht bewegen";
 
 $lang["no-options-available"]="Keine Optionen vorhanden";
 $lang["header-upload-subtitle"] = "Schritt %number: %subtitle"; # %number, %subtitle will be replaced, e.g. Step 1: Specify Default Content For New Resources
@@ -1825,11 +1861,6 @@ $lang["intro-plupload_dragdrop"] = "Ziehen Sie Dateien hierher oder Klicken Sie 
 $lang["intro-plupload_upload-replace_resource"] = "Klicken Sie auf <b>+ Dateien</b>, um eine Datei auszuwählen, und klicken Sie dann <b>Hochladen</b> an.";
 $lang["intro-batch_edit"] = "Sie können hier Uploadeinstellungen wählen und Werte für die Metadaten der Ressourcen die Sie hochladen wollen eintragen. <br />Diese werden sowohl für den aktuellen Upload verwendet, als auch als Voreinstellungen für den nächsten Upload gespeichert.";
 $lang["plupload-maxfilesize"] = "Die maximale erlaubte Upload-Dateigröße ist %s.";
-$lang["pluploader_warning"]="Ihr Browser unterstützt unter Umständen keine sehr großen Uploads. Wenn Sie damit Probleme haben, aktualisieren Sie bitte Ihren Browser oder versuchen Sie einen der untenstehenden Links.";
-$lang["getsilverlight"]="Um sicherzustellen, dass Sie die neueste Version von Silverlight installiert haben, besuchen Sie bitte die Microsoft Silverlight Website.";
-$lang["getbrowserplus"]="Um die neueste Version von BrowserPlus zu installieren, besuchen Sie bitte die Yahoo BrowserPlus Website.";
-$lang["pluploader_usejava"]="Den alten Java-Uploader benutzen.";
-
 $lang["collections-1"] = "(<strong>1</strong> Kollektion)";
 $lang["collections-2"] = "(<strong>%number</strong> Kollektionen)"; # %number will be replaced, e.g. 3 Collections
 $lang["total-collections-0"] = "<strong>Gesamt: 0</strong> Kollektionen";
@@ -1885,6 +1916,8 @@ $lang["matchingresourceslabel"]="Passende Ressourcen";
 
 # CSV Export of Search results
 $lang['csvExportResultsMetadata'] = 'CSV Export - der Metadaten des Suchergebnisses';
+$lang['csvExportResultsMetadataPersonal'] = 'Only include data from fields expected to contain personal data';
+$lang['csvExportResultsMetadataAll'] = 'Include data from all accessible fields e.g. contain technical metadata and detailed file information';
 $lang['csvAddMetadataCSVToArchive'] = 'Metadaten als CSV-Datei in das Archiv hochladen?';
 
 $lang["saving"]="Speichern...";
@@ -1922,6 +1955,9 @@ $lang["descending"] = "Absteigend";
 $lang["sort-type"] = "Sortierungstyp";
 $lang["collection-order"] = "Reihenfolge der Kollektionen";
 $lang["save-error"]="!! Fehler beim automatischen Speichern - bitte speichern Sie manuell !!";
+$lang["save-conflict-error"]="Edit conflict. Please reload the page";
+$lang["save-conflict-multiple"]="Edit conflict. Please reload the page";
+$lang["save-conflict-title"]="Edit conflict"; 
 
 $lang["theme_home_promote"]="Auf der Startseite hervorheben?";
 $lang["theme_home_page_text"]="Text auf der Startseite";
@@ -2277,44 +2313,21 @@ $lang["resetpassword"]="Reset Passwort";
 $lang["customaccesspreventshare"]="Sie haben keine Berechtigung um eine oder mehrere Ressourcen in dieser Kollektion weiterzugeben";
 
 $lang["prevent_user_group_sharing_externally"]="Verhindern, dass Benutzer Ressourcen an Externe weitergeben können";
+
 $lang["allow_user_group_selection_for_access_when_sharing_externally"]="Einer Benutzergruppe erlauben beim Weitergeben von Ressourcen einen individuellen Zugang zu vergeben";
 $lang["share_using_permissions_from_user_group"]="Externe Weitergabe mit den Rechten der Benutzergruppe";
 $lang["externalshare_using_permissions_from_user_group"]="Wählen Sie die Benutzergruppe für einen Zugang zu den weitergegebenen Ressourcen aus um Sie an einen externen Benutzer zu mailen";
 $lang["delete__nopassword"]="Wenn Sie fortfahren, wird diese Ressource dauerhaft gelöscht.";
+
 $lang["collection_download_too_large"]="Entschuldigen Sie bitte. Diese Kollektion ist zu groß um sie als eine einzelne Datei herunterzuladen. Versuchen Sie die Größe der Kollektion zu reduzieren, oder wählen Sie eine kleinere Größe.";
 $lang["all__passwordnewemailhtml"]="[img_gfx/titles/title.gif]<br /><br />Bitte klicken Sie auf den unten angeführten Link um ein neues Passwort zu Ihrem Account zu erstellen.<br /><br />URL: <a href=\"[url]\" target=\"_blank\" >[url]</a><br />Benutzername: [username]<br />[text_footer]" ;
+
 $lang['disk_size_no_upload_heading']="Upload im Moment nicht möglich";
 $lang['disk_size_no_upload_explain']="Aus Speicherplatzgründen ist ein Upload im Moment nicht möglich. Bitte entschuldigen Sie die Unannehmlichkeiten.";
 
-$lang["systemlog"]="Systemlog";
-$lang["system_performance"]="Systemleistung";
-$lang["mysql_throughput"]="MySQL Durchsatz";
-$lang["cpu_benchmark"]="CPU Leistung";
-$lang["disk_write_speed"]="Disk Schreibgeschwindigkeit";
-
-/* System Config */
-$lang['systemconfig'] = 'Systemkonfiguration';
-$lang['systemconfig_description'] = 'Die Optionen auf dieser Seite gelten systemweit und betreffen auch Benutzern zugängliche Funktionen. Bitte berücksichtigen Sie, dass einige Optionen benutzerabhängig sind, und von diesen überschrieben werden können.';
-
-/* System Console */
-$lang["systemconsole"]="Systemmonitor";
-
-/* Manage slideshows */
-$lang["manage_slideshow"] = "Slideshow anpassen";
-$lang["action-add-new"] = "Neues Bild hinzufügen";
-$lang['action-replace'] = 'Ersetzen';
-$lang["action-submit-button-label"] = "Hinzufügen";
-$lang["slideshow_use_static_image"] = "Zeige nur ein zufälliges Bild aus der Auswahl (das Bild ändert sich dann nur beim Neuladen der Seite)";
-
-/* Manage external shares */
-$lang['permission_manage_external_shares'] = 'Kann externe Links mit Ablaufdatum "Nie" verwalten';
-$lang['manage_external_shares'] = 'Externe Links verwalten';
-
-/* Dash */
-$lang["managedefaultdash"]="Kacheln für alle Benutzer verwalten";
-$lang["manage_user_group_dash_tiles"]="Kacheln für Benutzergruppen verwalten";
-
-# Start - User Dash Strings
+/*
+ * Start - User Dash Strings
+ */
 $lang["savethissearchtodash"]="Als Kachel-Element im Dashboard speichern";
 $lang["createnewdashtile"]="Dashboard Kachel-Element aus dieser Kollektion erstellen";
 $lang["specialdashtiles"]="Spezielle Dashboard Kachel-Elemente";
@@ -2332,7 +2345,7 @@ $lang["returntopreviouspage"]="Zurück zur vorigen Seite";
 $lang["showresourcecount"]="Ressourcenanzahl zeigen?";
 $lang["tilebin"]="Entfernen";
 $lang["last"]="Letztes";
-$lang["managedefaultdash"]="Dashboard Kachelelemente";
+$lang["managedefaultdash"]="Dashboard Kachel-Elemente für alle Benutzer verwalten";
 $lang["dashtile"]="Dashboard Kachel-Element";
 $lang["manage_own_dash"]="Mein Dashboard";
 $lang["manage_all_dash_h"]="Voreingestellte Kachelelemente verwalten -> Alle Benutzer / Kacheln (benötigt h Erlaubnis)";
@@ -2354,14 +2367,16 @@ $lang["dashtilevisitlink"]="Link im Browser öffnen";
 $lang["alluserprebuiltdashtiles"]="Fertige Kachelelemente erzeugen (Für alle Benutzer sichtbar))";
 $lang["manageowndashinto"]="Kachelelemente auf der Startseite hinzufügen oder löschen (je nachdem wie Berechtigungen gesetzt sind)";
 $lang['manage_all_user_dash_tiles_note'] = 'Anmerkung: Kachelelemente mit rotem Rand sind für Benutzer nicht sichtbar. (Admins see them as there are other tiles available but hidden from these users';
+$lang['manage_dash_tiles'] = 'Kachelelemente verwalten';
+$lang['view_tiles'] = 'View tiles';
 
-# User group dash tiles
+/* User group dash tiles */
 $lang['manage_user_group_dash_tiles']  = 'Kachelelemente für Benutzergruppen verwalten';
 $lang['who_should_see_dash_tile']      = 'Wer soll dieses Kachelelement sehen?';
 $lang['dash_tile_audience_me']         = 'Nur ich';
 $lang['dash_tile_audience_all_users']  = 'Alle Benutzer';
 $lang['dash_tile_audience_user_group'] = 'Spezielle Benutzergruppe(n)';
-# End of user group dash tiles
+/* End of user group dash tiles */
 
 # Create Config dash tile link descriptions (text)
 $lang["createdashtilependingsubmission"]="User contributions pending submission (hides if none in state)";
@@ -2378,23 +2393,23 @@ $lang["tile_thmbs"]="Single";
 $lang["tile_multi"]="Multi";
 $lang["tile_blank"]="Leer";
 $lang["tile_ftxt"]="Nur-Text";
-# * End - User Dash Strings *
+/* * End - User Dash Strings * */
 
-# * Start - Plugin Category Strings *
+/* * Start - Plugin Category Strings * */
 $lang["plugin_category_general"]="Generell";
 $lang["plugin_category_api"]="API";
 $lang["plugin_category_advanced"]="Erweitert";
 $lang["plugin_category_design"]="Design";
 $lang["plugin_category_ecommerce"]="E-Commerce";
 $lang["plugin_category_sharing"]="Externe Datenweitergabe";
-# * End - Plugin Category Strings *
+/* * End - Plugin Category Strings * */
 
-# System Down page strings
+/* System Down page strings */
 $lang['system_down_title'] = 'Achtung!';
 $lang['system_down_message'] = 'Das System ist für Wartungsarbeiten außer Betrieb. Danke für Ihr Verständnis.';
-# End of System Down page strings
+/* End of System Down page strings */
 
-# System Console
+/* System Console */
 $lang["systemconsole"]="System Konsole";
 $lang["systemconsoledebuglog"]="Debug Log";
 $lang["systemconsolememorycpu"]="Memory &amp; CPU";
@@ -2409,18 +2424,18 @@ $lang["systemconsoleonfailedtasklistcommand"]="Failed to execute tasklist comman
 $lang["systemconsoleondebuglognotsetorfound"]="\$debug_log_location not set, file not found or is not readable";
 $lang["systemconsoleonsqllognotsetorfound"]="\$mysql_log_transactions not set or \$mysql_log_location file not found or is not readable";
 
-# Global Trash Bin
+/* Global Trash Bin */
 $lang['trash_bin_title'] = 'Löschen';
 $lang['trash_bin_delete_dialog_title'] = 'Ressourcen aus der aktuellen Kollektion entfernen?';
-# End of Global Trash Bin strings
+/* End of Global Trash Bin strings */
 
-# My Account Strings
+/* My Account Strings */
 $lang["managecontent_defaulttextused"]="!! The text for the default language (?) is currently being used. Edit the text below to create an alternative version for this language / user group selection !!";
 $lang["myaccount"]="Mein Account";
 $lang["userpreferences"]="Meine Einstellungen";
 $lang["modifyuserpreferencesintro"]="Einrichten der persönlichen Einstellungen für Funktionen und das persönliche Dashboard.";
 
-# User preferences
+/* User preferences*/
 $lang['userpreference_colourtheme'] = 'Farbeinstellung / Thema';
 $lang["userpreferencecolourtheme"]="Interface colour theme";
 $lang['userpreference_user_interface'] = 'User interface';
@@ -2444,11 +2459,11 @@ $lang['userpreference_resource_notifications'] = "Send me resource messages abou
 $lang['userpreference_exiftool_write_metadata_label'] = 'Metadaten beim Download einbetten (Option wählbar nur bei "Download Kollektion")';
 $lang['userpreference_keyboard_navigation'] = 'Keyboard Navigation';
 
-# System Config
-$lang['systemconfig'] = 'System Konfiguration';
+/* System Config */
+$lang['systemconfig'] = 'Systemkonfiguration';
 $lang['systemconfig_linkedheaderimgsrc_label'] = 'Anwender Logo';
 $lang['systemconfig_header_favicon_label'] = 'Anwender favicon (Browser Icon)';
-$lang['systemconfig_description'] = 'The options on this page are system wide and can change some of the functionality available to the users. Please note that any option that is also user specific will take precedence if set.';
+$lang['systemconfig_description'] = 'Die Optionen auf dieser Seite gelten systemweit und betreffen auch Benutzern zugängliche Funktionen. Bitte berücksichtigen Sie, dass einige Optionen benutzerabhängig sind, und von diesen überschrieben werden können.';
 $lang['systemconfig_multilingual'] = 'Multilingual';
 $lang['systemconfig_default_language_label'] = 'Standard Sprache';
 $lang['systemconfig_browser_language_label'] = 'Browser Spracherkennung';
@@ -2491,7 +2506,7 @@ $lang['systemconfig_theme_category_levels'] = 'How many levels of theme category
 $lang['systemconfig_enable_themes'] = 'Enable Featured Collections';
 $lang["systemconfig_modal_default"] = "Enable modals for standard pages where configured? User preferences may override this.";
 
-# Error Messages
+/* Error Messages */
 $lang['error_check_html_first'] = 'Please Check HTML! The text used does not contain valid HTML.';
 $lang['error_generic'] = 'Sorry, there has been an error. If this error persists please contact your system administrator';
 
@@ -2507,7 +2522,7 @@ $lang["action_submit_review"]="Submit for review";
 $lang["action_continue_editing"]="Bearbeitung fortsetzen";
 $lang['action-addrow']="Zeile einfügen";
 
-# Messaging
+/* Messaging */
 $lang["seen"]="Gesehen";
 $lang["from"]="Von";
 $lang["mymessages"]="Meine Nachrichten";
@@ -2527,10 +2542,10 @@ $lang["emailandmessagesent"]="E-Mail und Nachricht wurden gesendet";
 $lang["confirm_remove_custom_usergroup_access"]="This will revoke all custom user group access. Are you sure?";
 $lang["applogo_does_not_exists"]="The uploaded logo is no longer available";
 
-# Edit field options
+/* Edit field options */
 $lang["manage_metadata_field_options"] = "Metadatenfelder verwalten";
 $lang['manage_metadata_field_options_import_options'] = 'Import options';
-$lang["system_performance"]="System Performance";
+$lang["system_performance"]="System Leistung";
 $lang["mysql_throughput"]="MySQL Durchsatz";
 $lang["cpu_benchmark"]="CPU Benchmark";
 $lang["disk_write_speed"]="Festplatten Schreibgeschwindigkeit";
@@ -2538,10 +2553,10 @@ $lang["metadata_option_change_warning"]="Please note that at present, updating t
 $lang['metadata_first_option_is_default']='The first option will be used as the default option for this field. To set the default option on all resources currently missing a value for this field use the link below.';
 $lang['metadata_populate_default_node_for_empty_values']='Populate default option';
 
-# Manage slideshows
-$lang["manage_slideshow"] = "Diashow verwalten";
+/* Manage slideshows */
+$lang["manage_slideshow"] = "Diashow anpassen";
 $lang["action-add-new"] = "Neues Bild hinzufügen";
-$lang["action-submit-button-label"] = "Absenden";
+$lang["action-submit-button-label"] = "Hinzufügen";
 $lang["slideshow_use_static_image"] = "Verwendet ein zufälliges, einzelnes Bild. (Bild wird nicht gewechselt bis zu einem Reload der Seite)";
 
 $lang["emailcollectionrequest"] = "[img_gfx/titles/title.gif]<br />The following user has made a request:<br />Username: [username]<br />User email: [useremail]<br /><br />Reason for request: [requestreason]<br /><br />Click the link below to view the request.<br /><a href='[requesturl]'>[requesturl]</a>";
@@ -2575,12 +2590,14 @@ $lang["download_file_creation_failed"] = "Die Download-Anforderung ist fehlgesch
 $lang["replace_resource_preserve_original"]="Die existierende Ressource als Alternative Datei behalten?";
 $lang["replace_resource_original_description"]= "Original %EXTENSION Datei"; // %EXTENSION  will be relaced by originl file extension
 $lang['replace_resource_original_alt_filename'] = 'Alternative filename';
+$lang['jq_create_previews_success_text'] = 'Previews created for resource #%RESOURCE successfully';
+$lang['jq_create_previews_failure_text'] = 'Failed to create previews for resource #%RESOURCE';
 
-# Manage external shares
-$lang['permission_manage_external_shares'] = 'Kann externe Weitergaben verwalten mit: Gültigkeit "Niemals"';
+/* Manage external shares */
+$lang['permission_manage_external_shares'] = 'Kann externe Weitergaben verwalten mit: Ablaufdatum "Nie"';
 $lang['manage_external_shares'] = 'Externe Weitergaben verwalten';
 $lang['filter_label'] = 'Filter';
-# end of Manage external shares
+/* end of Manage external shares */
 
 
 $lang["rse_analytics"]="Analytics";
@@ -2647,7 +2664,7 @@ $lang['responsive_result_settings'] = 'Result Settings';
 $lang['responsive_view_full_site'] = 'View full site';
 // end of Responsive
 
-# Actions
+/* Actions */
 $lang["actions_myactions"] = "Meine Aktionen";
 $lang["actions_introtext"] = "You can configure the criteria for actions that appear here by changing your user preferences";
 $lang["actions_noactions"] = "You have no outstanding actions";
@@ -2670,6 +2687,7 @@ $lang["actions_view_editable_as_resultset"]="View resources to review as a resul
 
 $lang["refinemetadata"]="Refine metadata";
 $lang["saveandnext"]="Sichern und Nächstes";
+$lang["save_and_auto"]="Sichern und Automatik-Nächstes"; 
 
 $lang["upload_sequence"]="Upload sequence";
 $lang["default_upload_sequence"]="Default upload sequence";
@@ -2677,10 +2695,55 @@ $lang["upload_first_then_set_metadata"]="Upload first, then set metadata";
 $lang["set_metadata_then_upload"]="Set metadata first, then upload";
 
 
-# Annotations
+/* Annotations */
 $lang['annotate_text_link_label'] = 'Annotate mode toggle';
 $lang['annotate_annotation_label'] = 'Annotation';
 $lang['annotate_annotations_label'] = 'Annotations';
 
 $lang["byte_prefix_mode_decimal"]="Use decimal for file sizes (1000 multiples, KB/MB/GB/TB) as opposed to binary (1024 multiples , KiB/MiB/GiB/TiB)";
-## End of version 10754
+#
+
+/* Errors */
+$lang['error_upload_resource_alternatives_batch'] = 'When using this feature (see $upload_alternatives_suffix) your original file MUST be the first one in the queue!';
+$lang['error_upload_resource_not_found'] = 'A resource ID could not be found!';
+$lang['error_user_registration_opt_in'] = 'Please check the box to indicate your consent';
+
+$lang['image_quality_100'] = "Maximum";
+$lang['image_quality_92'] = "Print";
+$lang['image_quality_80'] = "Web";
+$lang['image_quality_50'] = "Low";
+$lang['image_quality_40'] = "Very low";
+
+/* IIIF */
+$lang['systemconfig_api'] = "API";
+$lang["iiif_enable_option"] = "Enable IIIF support";
+$lang["iiif_disabled"] = "IIIF is not configured";
+
+$lang["property-personal_data"]="May contain personal data";
+$lang["api-test-tool"]="API test tool";
+$lang["api-function"]="API function";
+$lang["api-help"]='Please refer to the <a target="_blank" href="https://www.resourcespace.com/knowledge-base/api">API documentation</a> for function specifics. Be careful - any commands you enter will be executed using your live data.';
+$lang["api-view-documentation"]="View documentation";
+$lang["api-php-code"]="PHP code";
+$lang["api-php-help"]="Paste the below into the remote system to call the entered API function with the provided parameters.";
+
+$lang["font"]="Font";
+
+$lang["upload_success"] = "Success";
+$lang['user_registration_opt_in_message'] = "I consent to the personal data I have provided above being processed for the purposes of accessing this system. This processing includes logging my activity and contacting me as necessary for the use of the system.";
+$lang['activity_log_admin_log_in_as'] = "Admin user '%USERNAME_FROM' logged in as '%USERNAME_TO'";
+
+$lang["property-include_in_csv_export"]="Include in CSV export";
+$lang["share-set-password"] = "Share password (optional)";
+$lang["share-enter-password"] = "Please enter the access password to continue";
+$lang["share-invalid"] = "Invalid access key or password";
+## End of Version 8.6.12633 - 9.2.2019
+
+## Missing in en.php or may be not in source code anymore?
+$lang["viewstatistics"]="Statistiken ansehen";
+$lang["setup-basicsettings"]="Grundeinstellungen";
+$lang["setup-basicsettingsdetails"]="Dies sind die Grundeinstellungen für Ihre ResourceSpace Installation. Pflichtfelder sind mit einem <strong>*</strong> markiert.";
+$lang["pluploader_warning"]="Ihr Browser unterstützt unter Umständen keine sehr großen Uploads. Wenn Sie damit Probleme haben, aktualisieren Sie bitte Ihren Browser oder versuchen Sie einen der untenstehenden Links.";
+$lang["getsilverlight"]="Um sicherzustellen, dass Sie die neueste Version von Silverlight installiert haben, besuchen Sie bitte die Microsoft Silverlight Website.";
+$lang["getbrowserplus"]="Um die neueste Version von BrowserPlus zu installieren, besuchen Sie bitte die Yahoo BrowserPlus Website.";
+$lang["pluploader_usejava"]="Den alten Java-Uploader benutzen.";
